@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["Det är tråkigt, men mänsklighets instikt är att discriminera mot varandra på grund av ytliga saker."]}]}

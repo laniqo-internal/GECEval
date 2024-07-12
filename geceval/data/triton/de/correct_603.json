@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["Stadt Y, 5. Dezember 2012"]}]}

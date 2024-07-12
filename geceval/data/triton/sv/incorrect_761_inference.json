@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Här är korrigerad version: \"Om man har en tendens att ge höga värden till kläder, är det också sannolikt att man ger överlägsenhet till frisyr.\""]}]}

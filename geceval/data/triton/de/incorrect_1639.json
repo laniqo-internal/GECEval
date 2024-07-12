@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["Meinem eigenen Zustand zufolge ist Deutsch eine wichtigste Sprache sogar als meine Muttersprache."]}]}

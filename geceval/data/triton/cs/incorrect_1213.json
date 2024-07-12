@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["A proto čeština je prvním cizím jazykem, kterejmu se učim tak snaživě, vážně, pozorně a velmi podrobně."]}]}

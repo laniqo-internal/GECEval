@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Von 9:00 bis 15:00 Uhr bin ich auch unter folgenden Telefonnummer erreichbar: 0345-11111111."]}]}

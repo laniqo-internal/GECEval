@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Diese Bürger wurden in den Augen der DDR als \"Kriminelle\" betrachtet, weil sie Bücher aus dem Westen kauften oder versuchten, mit ihren im Westen lebenden Verwandten in Kontakt zu treten."]}]}

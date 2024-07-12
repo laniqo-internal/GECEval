@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["Die Fächer sind nämlich eher allgemein und die Studenten werden zu wenig informiert über die Berufsmöglichkeiten."]}]}

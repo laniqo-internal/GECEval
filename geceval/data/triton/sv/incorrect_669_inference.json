@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Det var första gång att jag fick ett e-mail där det beskrev något som var intressant för mig."]}]}

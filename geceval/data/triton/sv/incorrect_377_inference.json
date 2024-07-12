@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Kursen heter 'franska 3' och börjar den 3 september i Björkås."]}]}

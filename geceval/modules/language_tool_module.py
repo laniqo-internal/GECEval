@@ -5,7 +5,7 @@ from geceval.modules.gec_module import GECModule
 
 class LanguageToolModule(GECModule):
     def __init__(self, language="en"):
-        self.language_map = {"en": "en-US", "de": "de", "it": "it"}
+        self.language_map = {"en": "en-US", "de": "de", "it": "it", "sv": "sv"}
         self.set_language(language)
         self.lt = language_tool_python.LanguageTool(self.language_map[self.language])
 

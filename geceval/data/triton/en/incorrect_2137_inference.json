@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Fortunately these days everybody can take a plane and fly to America, Australia or anywhere else they want!"]}]}

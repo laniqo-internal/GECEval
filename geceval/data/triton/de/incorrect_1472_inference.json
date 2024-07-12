@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Das Justizsystem in Großbritannien ist so schwach, dass Kriminelle nur kurze Zeit im Gefängnis verbringen müssen, wenn sie überhaupt dorthin geschickt werden."]}]}

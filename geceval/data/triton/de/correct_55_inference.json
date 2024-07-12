@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Mit dem heutigen Universitätssystem ist es möglich praxisorientierte Abschlüsse zu wählen, die zu einem spezifischen Beruf am Ende führen."]}]}

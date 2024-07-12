@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Bakalářské studium začíná ze znalosti jazyka na úrovni A2, požaduje od studenta roční jazykovou praxi včetně pobytu na cizí univerzitě a končí písemnými a ústními zkouškami."]}]}

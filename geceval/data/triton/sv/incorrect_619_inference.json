@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Det är inte fel i teksten. Men om du vill så kan du läsa den på svenska så att den blir mer korrekt: \"Det berörs av var man bor och vilken kultur eller samhälle man tillhör.\""]}]}

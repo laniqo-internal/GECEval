@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Frauen können heute eine gute Karriere machen, doch in der Realität müssen sie gleichzeitig eine Familie (fast) ohne Unterstützung erziehen."]}]}

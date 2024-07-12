@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["Skolresultat: Det är resultatet av provet som studenter har redan gjort, och denna resultatet ska visa att om de kunde klara provet eller inte."]}]}

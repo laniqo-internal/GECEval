@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Ich wünsche Dir noch einen schönen Urlaub. Liebe Grüße auch an Deine Verwandten! Katharina"]}]}

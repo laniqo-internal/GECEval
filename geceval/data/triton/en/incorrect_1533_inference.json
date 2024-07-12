@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Now, all of Pat’s friends don’t tell her about their secrets because Pat isn’t very good at keeping secrets."]}]}

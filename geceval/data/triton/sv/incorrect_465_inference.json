@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["För länge har det varit dags att börja träna på gym, när jag var 15 år gammal och nu fortsätter jag med att gå på gymet här i Sverige."]}]}

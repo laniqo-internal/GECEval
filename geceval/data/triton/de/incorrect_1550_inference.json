@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Man hat an der Universität viele Möglichkeiten, seinen eigenen Überzeugungen und Weltanschauung freien Lauf zu lassen, darüber mit Kommilitonen zu diskutieren und dadurch Selbstvertrauen zu entwickeln."]}]}

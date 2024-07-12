@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Sowohl Familien als auch Einzelpersonen kaufen Häuser und Wohnungen auf Kredit, da die Preise in Stadt X sehr hoch sind."]}]}

@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Es ist viel besser, das Leben so ehrlich wie möglich zu leben damit man sich unschuldig und zufrieden fühlt."]}]}

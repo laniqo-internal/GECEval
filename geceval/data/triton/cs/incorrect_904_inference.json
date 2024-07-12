@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Cesta vlakem do Malaigu trvá čtyři až pět hodin, proto jsme byli na nádraží již v šest hodin ráno."]}]}

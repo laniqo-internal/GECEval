@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Ja, es ist sehr häufig heutzutage, dass Menschen die menschlichen Gefühle vergessen und sich stattdessen nur noch dem Gewinnstreben hingeben."]}]}

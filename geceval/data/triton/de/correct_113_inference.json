@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Es liegt daran, dass die Aussage \\\" praxisorientiert \\\" auch die Tatsache erwähnt, dass die Studenten die aus sehr guten und berühmten Universitäten stammen, mehr Chancen haben, in einer großen Firma Arbeit zu finden."]}]}

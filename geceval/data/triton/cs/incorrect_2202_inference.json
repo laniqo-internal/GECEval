@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["A taky máme zájem o lyžařskou školu, víte náhodou, když nějaká škola je blízko hotelu?"]}]}

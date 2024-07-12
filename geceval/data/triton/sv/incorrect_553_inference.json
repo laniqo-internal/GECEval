@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Romanen vill att läsaren måste tänka på andra som lever på samma jord, men de föds i ett land som inte har tillgång till resurser eller där politiken inte är så bra."]}]}

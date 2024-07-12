@@ -5,7 +5,7 @@ class PunctuationSeekerModule(GECModule):
     def __init__(self, language="en"):
         self.set_language(language)
         self.major_punctuation_marks = ".,!?"
-        self.minor_puntuation_marks = ".,!?`'\"-;"
+        self.minor_punctuation_marks = "`'\"-;"
 
     def score(self, text: str) -> float:
         for mark in self.major_punctuation_marks:

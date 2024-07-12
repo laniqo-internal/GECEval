@@ -1,0 +1,1 @@
+Die Wohnung kann ein Badezimmer, ein Schlafzimmer und eine Küche enthalten.

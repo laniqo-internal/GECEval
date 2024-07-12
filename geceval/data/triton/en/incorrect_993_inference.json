@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["During the show, I was very hungry, but I hoped to visit a restaurant. It's a pity, but the restaurant was closed because it was too late."]}]}

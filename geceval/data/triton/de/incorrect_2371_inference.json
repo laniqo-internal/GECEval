@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Dafür sind die Mieten und Kaufpreise in der Region von Stadt X gestiegen, während sie in Stadt X selbst deutlich gesunken sind."]}]}

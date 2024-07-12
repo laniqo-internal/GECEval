@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Was für Rechte und Pflichten erhalte ich, wenn ich mit diesem Job beginne?"]}]}

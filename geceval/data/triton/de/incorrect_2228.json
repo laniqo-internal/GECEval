@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["Ich sende Inhen Bewerbungsbrief für eine Position als Computer-Spezialist bei Ihrem Betrieb für den Zeitraum vom 1. Januar 2011 bis zum 30. Januar 2011."]}]}

@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Der Kampf der Ostdeutschen um Freiheit und Genuss war zwar illegal, doch hat sich das gelohnt, \"Kriminelle\" zu sein."]}]}

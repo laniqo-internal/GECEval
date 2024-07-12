@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Takový chtěl(a) bych věděl(a), jaké jídlo nabízí hotel a zda zde je parkoviště, protože tam jedeme autem."]}]}

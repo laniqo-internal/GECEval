@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["Eva Meier Zentralplatz 1 12345 Stadt X Computer-Spezialist Odenwaldstraße 5 53119 Bonn Betreff: Bewerbung als Praktikantin Stadt X 22, Marz 2010 Sehr geehrte Damen und Herren, Mit großem Interesse habe ich Ihre Anzeige in der Zeitung gelessen."]}]}

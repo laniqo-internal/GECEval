@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["man kann ein sogenannte \\\" Sandwich \\\" Jahr in Berlin studieren, obwohl er aus Stuttgart kommt."]}]}

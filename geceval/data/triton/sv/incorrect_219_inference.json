@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Här är korrigerad version:\n\n\"Kommer i tid är viktigt när man går på jobbintervju. Om du inte kommer i tid, skickar du en negativ signall till din potensielle arbetshavare.\""]}]}

@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Imagine that all the people have hats with big edges to protect their faces from sunburn, and it’s the most trendy fashion of the year!"]}]}

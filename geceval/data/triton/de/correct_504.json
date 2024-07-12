@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["Stadt X 12-3-2012 Liebe Julia, wie geht´s dir?"]}]}

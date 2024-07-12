@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["But, if there's a problem that the show is on Tuesday afternoon, at the same time as shopping, I suggest having the shopping on Wednesday afternoon because we won't have anything to do!"]}]}

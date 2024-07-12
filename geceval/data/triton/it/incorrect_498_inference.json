@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Cara Beatrice e caro Stefano,\n\nCongratulazioni per il vostro matrimonio e mille grazie per l'invito!"]}]}

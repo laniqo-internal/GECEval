@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["I must wash the dishes from time to time (I sometimes try to avoid this unpleasant duty) and clean our house."]}]}

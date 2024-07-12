@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Man lebt stets außerhalb der Gesellschaft und kann sich niemals vollständig darin beteiligen, auch wenn man sich im späteren Leben von jeglicher Kriminalität abwendet."]}]}

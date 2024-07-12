@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Litteraturböcker kan omfatta flera olika teman, men i den här fallet valde jag att gräva djupare i ämnet \"syskonkärlek\". Detta beror på att jag upplever detta varje dag och känner att jag inte kan leva utan kärlek."]}]}

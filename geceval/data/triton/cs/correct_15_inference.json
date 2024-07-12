@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Pro mě je možné obětovat některé ideály ve prospěch těch, které jsou mi podstatnější."]}]}

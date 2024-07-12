@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Wegen eines Wundes am Arm kann der Mensch nicht den ganzen Arm vernichten, sondern er muss handeln."]}]}

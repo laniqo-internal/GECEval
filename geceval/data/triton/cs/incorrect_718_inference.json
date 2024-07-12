@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Opravený text:\n\n17. Nemyj se u toalet\n18. Nevhazuj odpadky do koše\n19. Nedělej hluk žvýkáním gumy. Když jsem přespal a spěchal, vždy udělal nějakou chybu."]}]}

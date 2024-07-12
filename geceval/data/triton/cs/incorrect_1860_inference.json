@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Zimní semestr na nově založené univerzitě navštěvovalo 256 studentů, kteří studovali na fakultách filosofie, medicíny, práva a teologie."]}]}

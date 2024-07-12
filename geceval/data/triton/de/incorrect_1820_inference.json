@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Ich finde es richtig schön, wenn zum Beispiel Peachwerk-Familien beide Traditionen pflegen, denn so können die Kinder gleichermaßen zwei Kulturen kennenlernen."]}]}

@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Ale přišel čas, i když musel vspomínat, co je matnice (ne film) a kolik bitů má bajt, čím se liší operační paměť od základní."]}]}

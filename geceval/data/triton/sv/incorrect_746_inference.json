@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Här är rättstavade texten: Jag gillar att träffa varandra på en fin kopp kaffe i centrum och ta fika."]}]}

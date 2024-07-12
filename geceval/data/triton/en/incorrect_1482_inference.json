@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["I arrived at the right time (7:30 p.m.) that evening but the play, which was 'Over The Rainbow', started almost an hour later."]}]}

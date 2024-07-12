@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Sarà meglio quando uno di voi mi chiami e ne parleremo di questo problema."]}]}

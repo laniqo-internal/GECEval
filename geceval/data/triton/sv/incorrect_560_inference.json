@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Men under de senaste år har mänsklighetens uppfattning förändrats om många olika begrepp inom familjen."]}]}

@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["I am writing in reply to your letter in which you communicate I have won first prize in your competion."]}]}

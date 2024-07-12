@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["Michael Winkelmann Müllergasse 1 12345, Stadt X Aupairsglobal Bahnhofstr."]}]}

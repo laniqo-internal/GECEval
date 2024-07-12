@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["Meiner Meinung nach sollte man sich selbst entscheiden, welche Sprache am nützlichsten ist."]}]}

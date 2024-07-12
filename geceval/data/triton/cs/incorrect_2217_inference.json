@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Je na jar nebo ve sněhu; to vím, protože stromy mají listy a lidé nemají na sobě teplé oblečení."]}]}

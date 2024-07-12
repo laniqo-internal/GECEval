@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Om man väljer att stanna hemma kan risken finnas att det blir dålig ekonomi, om man istället väljer att gå till jobbet, så kanske man inte träffar barnen så ofta."]}]}

@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Auf Ihrem Brief steht, dass die Familie Müller nur ein Baby hat und dass ich nur von 8:00 bis 17:00 Uhr aufpassen musste."]}]}

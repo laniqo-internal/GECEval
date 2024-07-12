@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["I'm writing to you to inform you about the disappointing evening I had when I went to your theater to see the play called \"OVER THE RAINBOW\"."]}]}

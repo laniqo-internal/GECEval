@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Seděla jsem a kouřila jsem a uvědomila si, že potřebuji nové šaty, abych se oblékla."]}]}

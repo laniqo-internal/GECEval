@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Ústí nad Orsini není tak dobré, protože se tam nachází mnoho průmyslových podniků."]}]}

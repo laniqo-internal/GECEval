@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Mia sorella è stata malata tra due giorni e quindi non è potuta andare con mio fratello in Francia a trovare i nostri parenti."]}]}

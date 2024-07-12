@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["En annan anledning är att om man lär sig två språk kommer man bli halvspråkig i båda."]}]}

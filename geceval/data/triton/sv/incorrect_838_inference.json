@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Om det finns en klädkod måste man följa den efter, eftersom den visar respect för andra personer."]}]}

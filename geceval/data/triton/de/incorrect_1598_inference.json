@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Es ist in der Natur des Menschen, Frieden zu wünschen und ihn auch für andere zu wollen."]}]}

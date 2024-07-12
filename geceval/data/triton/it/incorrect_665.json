@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["Per la scuola, abbiamo un sacco da fare ma il professore è molto simpatico."]}]}

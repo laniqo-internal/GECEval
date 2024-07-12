@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["In den letzten zwei Jahren versuchte unsere Regierung, die Gehälter der Beamten wegen einer Preiserhöhung von 20 % anzuheben."]}]}

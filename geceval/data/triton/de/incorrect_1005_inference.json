@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Diese Betrachtung kann man als düster, übertrieben und hoffnungslos empfinden; dennoch sehe ich ein Licht am Ende des Tunnels."]}]}

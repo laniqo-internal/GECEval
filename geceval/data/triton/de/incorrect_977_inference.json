@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Nach dem Abitur entscheiden sich immer mehr Menschen dafür, an der Universität zu studieren."]}]}

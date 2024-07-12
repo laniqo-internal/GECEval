@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Beispielhaft sei hier die Freie Universität Berlin genannt, wo viele Studenten, die sich für Umwelt einsetzen, in Studentencafés aktiv sind."]}]}

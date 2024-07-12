@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Moje maminka je učitelka. Já bydlím s manželem ve Žitavě; my nemáme žádné děti. Pracuji teprve dva měsíce."]}]}

@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Det är inte säkert vad du försöker säga med \"arg kvinna\". Om du vill ha en korrekta översättning, var god och ge mig mer kontext eller ytterligare information."]}]}

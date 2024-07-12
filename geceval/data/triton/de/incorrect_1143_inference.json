@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Die meisten Universitätsabschlüsse im alten System waren nicht praxisorientiert und haben die Studierenden nicht gut auf die reale Welt vorbereitet. Daher war der Wert eines Universitätsabschlusses begrenzt."]}]}

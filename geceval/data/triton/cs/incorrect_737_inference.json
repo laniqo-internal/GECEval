@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Myslím si, že je dobré, když studenti mají možnost někde trochu pracovat, protože je to velmi důležité pro nabývání zkušeností v oboru."]}]}

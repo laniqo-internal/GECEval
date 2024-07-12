@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["Četl že andulak muže vyučit až vic než 100 slov, a že nejlepši „studenti“ jsou mladi samci."]}]}

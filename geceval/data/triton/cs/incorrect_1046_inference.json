@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Posíláme si e-maily často, ale myslím, že to není stejné jako osobní setkání, zajít na kávu a pokecat si alespoň dvě hodiny."]}]}

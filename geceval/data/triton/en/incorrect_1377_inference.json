@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["I'm also fond of tennis, I've just started my lessons and would like to continue practising during the summer."]}]}

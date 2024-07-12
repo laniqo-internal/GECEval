@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["If you really want to hear about school rules in my country, I'll try to write about them in a nutshell."]}]}

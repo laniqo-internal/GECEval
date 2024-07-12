@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Han hälsade - 95% av det har jag gjort som jag behöver, men de 5% som kvar står än."]}]}

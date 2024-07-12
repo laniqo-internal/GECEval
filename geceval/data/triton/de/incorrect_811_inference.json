@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Man kann ein Fach studieren, in welchem man sich interessiert, ohne das Problem, dass man sich jung entscheiden muss, welche Karriere er verfolgen soll."]}]}

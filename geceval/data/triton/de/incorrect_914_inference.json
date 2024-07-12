@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Ein Wissen, das man nicht weiß, in einer konkreten, realen Problemsituation anzuwenden, ist fast nutzlos."]}]}

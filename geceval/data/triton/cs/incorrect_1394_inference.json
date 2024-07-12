@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["služka, lenoška, oslovení \"pane toto\"\nMůj nejhorší den v životě\nJednoho krásného dne v létě jsem s tatou chodila po obchodech a uviděla jsem krásnou sukni."]}]}

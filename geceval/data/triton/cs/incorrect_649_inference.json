@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Například ve Spojených státech, když někdo jde na nákup, je vždy někdo u pokladny, kdo dává zboží do tašky."]}]}

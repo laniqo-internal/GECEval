@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Zum Beispiel hat ein Abschluss von Stanford oder Harvard mehr Wert als einer von anderen, kleineren amerikanischen Universitäten."]}]}

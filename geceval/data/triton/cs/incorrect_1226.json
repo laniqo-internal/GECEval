@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["Čeština je velmi neobyčejný jazyk, který má svůj soukromý pěvný základ ale při tom má v sobě hodně věcí z jiných jazyků, což je moc zajímavě."]}]}

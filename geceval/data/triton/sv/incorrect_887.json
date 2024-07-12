@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["Detta eftersom när samhället pratar ett annat språk än det man gör hemma kan bli svårt att hålla sig uppdaterad med båda språken."]}]}

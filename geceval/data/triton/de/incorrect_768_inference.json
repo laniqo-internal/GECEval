@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Das derartige Dinge passieren können, in einer Gesellschaft, wo jeder die gleichen Chancen bekommen muss, ist unausweichlich!"]}]}

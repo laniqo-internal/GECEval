@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["Das hießt, ich fühle mich wohl, dass ich die deutsche Sprache kann, die normalerweise als eine nicht nützliche Sprache angesehen wird."]}]}

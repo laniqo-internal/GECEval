@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Es scheint, dass Kriminalität sich nicht auszahlt, wenn wir alte Omas sehen, während die Nachrichten über eine Diebin berichten, die in ihre Wohnungen eingedrungen ist und beispielsweise deren Geldbörsen gestohlen hat."]}]}

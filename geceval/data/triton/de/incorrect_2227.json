@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["Bahnhofsstraße 12 12-321 Stadt Y. Computer-Spezialist Odenwaldstraße 5, 53119 Bonn Bewerbung um ein Praktikum als Computer-Spezialist Sehr geehrte Damen und Herren, mit großem Interesse habe ich Ihre Anzeige in „Zeitung XY \\\" gelesen."]}]}

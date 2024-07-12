@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Když se někdo odstěhuje a začíná život někde jinde, může to být občas velký šok."]}]}

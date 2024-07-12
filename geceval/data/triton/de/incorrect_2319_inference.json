@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Im Silvester mache ich eine Silvester in meinem Haus am 20.03.2012."]}]}

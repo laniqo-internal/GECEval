@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Gegenüber BA-Studenten, die ein zusätzliches Jahr oder mehr studiert haben, sind die Jobs einfacher zu finden."]}]}

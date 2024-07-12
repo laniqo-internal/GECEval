@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Det här är en korrektad version av teksten: \"Där finns människor som deltar i samma intressen.\""]}]}

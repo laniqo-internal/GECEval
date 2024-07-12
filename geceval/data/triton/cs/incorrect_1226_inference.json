@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Čeština je velmi neobvyklý jazyk, který má svůj vlastní zpěvný základ, ale přesto v sobě obsahuje mnoho prvků z jiných jazyků, což je velmi zajímavé."]}]}

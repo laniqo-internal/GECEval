@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["We would have to forgo the shopping, as we might not have enough time and the exchange rate might be too high for us to do much shopping."]}]}

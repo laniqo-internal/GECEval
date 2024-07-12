@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Řekl, že půjde do města hledat někoho, kdo je hloupější než ona, a když nikoho takového nenajde, ať na něj nečeká."]}]}

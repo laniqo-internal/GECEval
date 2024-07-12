@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["I texten \\\" Världens språk tynar bort \\\" (språkporten123, 2012) beskriver författaren Monika Åström att Lisbet Rausing har donerat till forskare som vill hjälpa utrotningshotade språk innan de tystnar ner för evighet."]}]}

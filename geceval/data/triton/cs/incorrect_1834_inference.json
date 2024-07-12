@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Nekterá slova, jak v ruštině tak i v češtině, se vyslovují stejně, ale mají úplně jiný význam."]}]}

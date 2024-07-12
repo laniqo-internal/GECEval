@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["Probabilmente arrivò il 18 novembre e resterò fino al 22 novembre."]}]}

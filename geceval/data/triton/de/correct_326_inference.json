@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Das ist sehr wichtig für mich, deswegen hoffe ich, dass Sie sich schnell mit mir in Verbindung setzen."]}]}

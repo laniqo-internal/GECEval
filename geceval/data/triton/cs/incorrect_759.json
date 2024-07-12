@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["Čeština je pro mě klíč studovat architekturu dobře a znát evropské kultury a zvyky."]}]}

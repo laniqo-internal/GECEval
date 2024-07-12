@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Wohnung in Neuburg\n\nIch brauche eine Wohnung. Am 20. Juli ziehe ich in meine neue Wohnung ein. Meine alte Wohnung ist zu klein geworden. Es gibt einen großen Wohnraum, ein Schlafzimmer, ein Kinderzimmer, eine Küche und ein Badezimmer."]}]}

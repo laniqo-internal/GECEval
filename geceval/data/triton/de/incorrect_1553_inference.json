@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Eine Losung der Studentenproteste, die im vergangenen Jahr in Deutschland stattgefunden haben und sich gegen die Verkürzung der Bachelor-Studienzeit gerichtet haben, lautete \"Gib mir Zeit zum Lernen\"."]}]}

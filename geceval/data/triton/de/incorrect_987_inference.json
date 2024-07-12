@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Es gibt tatsächlich viele Studenten, die über einen sehr hohen Abschluss verfügen (z. B. ein Master-Diplom oder gar eine Promotion), jedoch Schwierigkeiten haben, einen Beruf zu finden, der ihren Qualifikationen entspricht."]}]}

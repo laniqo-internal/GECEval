@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["Když jazyk je hrubý, tak i lidé jsou hrubí, a když, napřiklad, jazyk je živý, tak i lidé jsou živi a čilí."]}]}

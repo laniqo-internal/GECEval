@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["My se seznámili v Novém Dillí a od té doby jsouchom manželé/manželky. (V závislosti na pohlaví oslovení \"my\" ve větě)\n\nNebo:\n\nSeznámili jsme se v Novém Dillí a loni si vzali."]}]}

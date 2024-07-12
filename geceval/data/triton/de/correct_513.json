@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["Zentralplatz 12 A Stadt X XY Haus An das Wohnungsamt."]}]}

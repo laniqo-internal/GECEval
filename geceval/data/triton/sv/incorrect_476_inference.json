@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Andra tip är att hälsa chefen med en hand och stå tyst när han eller hon sager hej."]}]}

@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["I prefer to stay in a log cabin rather than in a tent, as I'm not used to narrow spaces and feel more comfortable in a room that resembles a bedroom."]}]}

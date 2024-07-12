@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["In Vergleich zur französischen Sprache, die nur in Frankreich und einigen afrikanischen Ländern gesprochen wird, sprechen Deutsch neben Deutschland auch Österreich und die Schweiz, was zusammen eine größere Anzahl von Muttersprachlern ergibt."]}]}

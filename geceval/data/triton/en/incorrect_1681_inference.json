@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["I would prefer an accommodation in log cabins as I'm not keen on tents and I think that a log cabin is more comfortable than a tent."]}]}

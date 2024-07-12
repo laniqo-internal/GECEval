@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Es gibt viele Varianten des Verbrechens und sie lassen sich in zwei Gruppen unterteilen."]}]}

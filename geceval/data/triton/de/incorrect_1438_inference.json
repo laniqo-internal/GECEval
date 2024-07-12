@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Die Entscheidung, die Gesetze und Regeln eines Landes zu respektieren, geht uns alle an."]}]}

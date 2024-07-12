@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Wenn zu viele Menschen fühlen, dass sie von der Gesellschaft abgehängt werden, dann kann es für die Demokratie gefährlich werden."]}]}

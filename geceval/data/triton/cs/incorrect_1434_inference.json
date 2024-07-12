@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Pohádka o zlatém rybku Bylo nebylo, žil kapr král a vládl celým rybníku."]}]}

@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Děkuji Ti mnohokrát za Tvá zpráva. Studium je zatím příjemné, protože mám teď spoustu času, dokud nebude diplom dokončen."]}]}

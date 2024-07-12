@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Chtěla bych se zeptat, zda máte ve výše zmíněném termínu volný pokoj a pokud ano, kolik stojí?"]}]}

@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["People, who don't like shopping have their own reasons for this situation (maybe they had an accident with a rude shop assistant, bought not fresh food one day and do not want to do that any more, had bad experience with other people in shops)."]}]}

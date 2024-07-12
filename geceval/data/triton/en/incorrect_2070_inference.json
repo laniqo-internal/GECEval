@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["If you go to the centre of every big town you will see people walking from store to store searching for something to wear or to buy to eat."]}]}

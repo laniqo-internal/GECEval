@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Müllergasse 12 12345 Stadt X Ukraine Tel: (0038) 0123456789 Aupairsglobal Bahnhofstr."]}]}

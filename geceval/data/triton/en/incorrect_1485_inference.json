@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["This is not a simple question, because I've gotten used to dealing with technology since I was a child, but I'll try to explain it to you anyway."]}]}

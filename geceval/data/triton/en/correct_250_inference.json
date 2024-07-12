@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["I would like to travel in July. I am going to finish my exams in June, and I am planning to go back to China in early August."]}]}

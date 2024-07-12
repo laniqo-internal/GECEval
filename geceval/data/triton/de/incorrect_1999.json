@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["ich möchte diese Arbeit machen, weil ich habe gedacht, dass ich auf Deutsch sprechen werde Aus diesem Grund möchte ich nach Deutschland fahren."]}]}

@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Här är korrigerad version: \"Tradet med T-tippen är att när man pratar om något, ska man gå så när som möjligt.\""]}]}

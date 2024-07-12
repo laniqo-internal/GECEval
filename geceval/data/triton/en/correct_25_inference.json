@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["On Thursday, the 3rd of May 2000, we went to your theatre to see \\\" Over the rainbow \\\"."]}]}

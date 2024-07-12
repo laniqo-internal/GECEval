@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["Glasgow je největší město tohoto regiónu, kde je jedna z nejprestižnějších univerzit v celé Británii."]}]}

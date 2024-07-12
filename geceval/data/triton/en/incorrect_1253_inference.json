@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["We may not need maids to do housework anymore as they can easily be replaced by a robot, a machine, or something else with the same purpose."]}]}

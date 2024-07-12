@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["I arrived at the theater on time and the musical show started later than I expected so I was getting nervous because I dislike very much the impuntuality, but that wasn't all."]}]}

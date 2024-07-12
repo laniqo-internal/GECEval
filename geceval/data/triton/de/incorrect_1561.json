@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["Die Atmosphäre in solche Cafes ist gemütlicher als in einen Mensa, und nicht so chaotisch."]}]}

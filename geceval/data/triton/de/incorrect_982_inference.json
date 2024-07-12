@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Die Fächer sind nämlich eher allgemein und die Studenten werden zu wenig informiert über die Berufsmöglichkeiten."]}]}

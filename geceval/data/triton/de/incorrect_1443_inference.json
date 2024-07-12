@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Diese Nachfrage hat viele Formen und es geht nicht nur darum, Geld zu zahlen, sondern auch um das Verlieren von etwas."]}]}

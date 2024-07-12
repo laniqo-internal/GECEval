@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Oficiálně výuka je bezplatná, ale existuje mnoho různých soukromých škol, které si účtují školné, avšak často jsou jejich učitelé kvalifikovanější než ti ve státních školách."]}]}

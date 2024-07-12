@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["Zentralplatz 12 12345 Stadt X Mobil: 012344567 Computer-Spezialist Odenwaldstraße 5 53119 Bonn Bewerbung um Praktikumsplatz als IT-Systemkauffrau Sehr geehrte Damen und Herren, hiermit möchte ich mich um einen Praktikumsplatz bei Ihnen bewerben."]}]}

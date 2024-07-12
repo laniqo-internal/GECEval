@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Zum Beispiel: Ich lebe seit zehn Jahren in Deutschland, aber ich weiß, dass ich hier ein Gast bin."]}]}

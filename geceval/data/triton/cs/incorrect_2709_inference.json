@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Jeden známý myslitel prohlásil, že \"člověk je nejdokonalejším výrobkem\" své doby, neboť dokáže pracovat, zkoumat, přemýšlet, analyzovat (tato schopnost nás odlišuje od ostatních živočichů) a řídit svůj vlastní život a své touhy."]}]}

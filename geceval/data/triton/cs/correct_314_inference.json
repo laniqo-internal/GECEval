@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Proto mezi absolventy tohoto kurzu můžeme najít jména významných českých spisovatelů, například Pavla Kohouta, Evu Kantůrkovou nebo Michala Viewegha."]}]}

@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Wenn Sie nach der Korrektur des Satzes fragen, lautet er korrekt: \"Wann musst du wieder arbeiten?\""]}]}

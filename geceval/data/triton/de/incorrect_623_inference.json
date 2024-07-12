@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Diese Vorurteile stammen aus der Tatsache, dass ein Bachelor of Arts einen nicht wirklich auf etwas Bestimmtes vorbereitet, und auch aus dem Umstand, dass viele Männer, die Musik studieren, oft schwul sind."]}]}

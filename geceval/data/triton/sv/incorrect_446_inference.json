@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["I texten \"Världens språk tynar bort\" (Språkporten123, 2012) beskriver författaren Monika Åström att Lisbet Rausing har donerat till forskare som vill hjälpa utrotningshotade språk innan de tystnar ner för evighet."]}]}

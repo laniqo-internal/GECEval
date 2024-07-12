@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Verschiedene Länder haben unterschiedliche Systeme, d.h. jedes Land hat seine eigenen Vorstellungen davon, wie das Studium ablaufen sollte."]}]}

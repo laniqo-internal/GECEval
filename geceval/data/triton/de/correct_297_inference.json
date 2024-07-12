@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Für Leute auf der Welt ist es schon eindeutig, dass Englisch, Französisch und Spanisch am meisten gesprochen werden."]}]}

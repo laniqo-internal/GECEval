@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["THEY DON'T LIKE SHOPPING EITHER BECAUSE OF THE WEATHER (SOMETIMES IT'S TOO HOT OR TOO COLD FOR GOING OUTSIDE)."]}]}

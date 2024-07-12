@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Plná očekávání jsi oba lyžaře na vrcholu svahu, když najednou se objevil medvěd a zabil je s vysokou pravděpodobností."]}]}

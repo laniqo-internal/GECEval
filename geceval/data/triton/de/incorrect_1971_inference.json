@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Stadt X, 11.03.2012\n\nLiebe Maria,\n\nwie geht es dir?\n\nMit freundlichen Grüßen,\n[Ihr Name]"]}]}

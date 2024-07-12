@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Hier ist der korrigierte Text:\n\n101 1234\nStadt X\n90451 Nürnberg\n\nSehr geehrte Damen und Herren,\n\nIch möchte mich bei Ihnen beschweren, da Sie mein Arbeitgeber sind, über die Situation, in der ich mich derzeit befinde."]}]}

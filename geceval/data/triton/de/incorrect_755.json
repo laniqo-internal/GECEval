@@ -1,0 +1,1 @@
+{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["Ich bin eine Studentin und würde gerne besprechen, ob die Studenten unter entspreschenden Bedingungen studieren, sind sie nach dem Universitätsabschluss auf die Wirkliche Welt vorbereitet, und lohnt sich überhaupt das Studium,"]}]}

@@ -1,0 +1,1 @@
+Už ve druhém ročníku vám vyjmenuje listy řapíkaté, osmé ročníky pak vypočítají výsledný odpor rezistoru zapojeného v elektrickém obvodu – jak za sebou, tak vedle sebe.

@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Here is your text edited for spelling and grammar: \n\n\"My first question is about clothing. What types of clothes should we bring, and how much money will we need?\" \n\nLet me know if there is anything else I can help with!"]}]}

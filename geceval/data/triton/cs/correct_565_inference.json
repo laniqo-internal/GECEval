@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Tento fakt, že jednou z nejdůležitějších věcí v životě člověka je práce, většina lidí dosud respektuje."]}]}

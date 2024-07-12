@@ -24,6 +24,9 @@ class GECModule(ABC):
         scores = [self.score(text) for text in texts]
         return np.mean(scores)
 
+    def close(self):
+        pass
+
     @abstractmethod
     def score(self, text: str):
         """Score a given text based on a given GEC metric"""

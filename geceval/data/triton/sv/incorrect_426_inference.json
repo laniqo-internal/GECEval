@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Vissa menar att eftersom det kräver enorma resurser för att bidra till behållandet av ett språk, kan dessa resurser bättre användas för att adressera mer aktuella samhällsproblem."]}]}

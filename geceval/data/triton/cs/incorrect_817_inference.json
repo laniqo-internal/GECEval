@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Musí se uvolnit, ale občas také uklidit doma, a my musíme odejít, protože máme mnoho věcí k udělení."]}]}

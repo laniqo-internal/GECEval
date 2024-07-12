@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Und zu meinen Aufgaben gehört nicht nur die Kinderbetreuung, sondern auch Kochen, Putzen, Nachtdienst, Einkaufen uvm."]}]}

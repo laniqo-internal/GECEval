@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["La mia famiglia sta bene: zio Michele è allegro e felice; anche zia Maria sta bene. Sono contenta del mio lavoro: ho molto da fare, ma mi piace molto. In vacanza sono andata in montagna; un mio amico ha lì una casa."]}]}

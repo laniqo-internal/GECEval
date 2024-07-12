@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Men språk är inte endast ett kommunikationsverktyg som hjälper individen att bli förstådd, utan det är även en del av ens arv och kultur."]}]}

@@ -1,0 +1,1 @@
+{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Weil man nicht genau weiß, ob etwas in seinem Heimatland konventionell ist, wird im Ausland mit dem Finger gezeichnet."]}]}
