@@ -16,9 +16,7 @@ class LanguageToolModule(GECModule):
     def explain_errors(self, text: str):
         suggestions = self.lt.check(text)
         label = True if len(suggestions) > 0 else False
-        return label, "Languagetool mistakes found: " + ", ".join(
-            [str(x) for x in suggestions]
-        )
+        return label, ", ".join([str(x) for x in suggestions])
 
     def close(self):
         self.lt.close()

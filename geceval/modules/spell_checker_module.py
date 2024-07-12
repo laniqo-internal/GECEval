@@ -17,7 +17,7 @@ class SpellcheckerModule(GECModule):
         tokens = self.spellchecker.split_words(text)
         misspelled = self.spellchecker.unknown(tokens)
         label = True if len(misspelled) > 0 else False
-        return label, "Spelling mistakes found: " + ", ".join(
+        return label, ", ".join(
             [f"{error}->{self.spellchecker.correction(error)}" for error in misspelled]
         )
 
