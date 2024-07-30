@@ -1,1 +1,0 @@
-{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Frau EVA SCHMIDT\nBAHNHOFSTR. 8-12, 1234 STADT X\nLITAUEN\nAUPAIRSGLOBAL\nBAHNHOFSTR: 101, 65185 WIESBADEN\n0611 / 9988776\nSTADT X\n14.05.2011"]}]}

@@ -1,1 +1,0 @@
-{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Finové jsou často tichý lid, a je neslušné, jestliže někdo je ve veřejném prostoru příliš hlasitý."]}]}

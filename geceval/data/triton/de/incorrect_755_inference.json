@@ -1,1 +1,0 @@
-{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Ich bin eine Studentin und möchte gerne diskutieren, ob die Studenten unter entsprechenen Bedingungen studieren, ob sie nach dem Universitätsabschluss gut auf die reale Welt vorbereitet sind und ob ein Studium sich überhaupt lohnt."]}]}

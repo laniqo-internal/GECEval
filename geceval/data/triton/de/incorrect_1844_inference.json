@@ -1,1 +1,0 @@
-{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Bahnhofsstraße 12\n12345\nLiebe Dana,\nich freue mich sehr über Ihre E-Mail!"]}]}

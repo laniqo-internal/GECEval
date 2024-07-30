@@ -1,1 +1,0 @@
-{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Ich möchte eine Wohnung mit 1 oder 2 Zimmern, bitte, ca. 55-65 m² groß."]}]}

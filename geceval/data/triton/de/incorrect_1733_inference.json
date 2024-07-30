@@ -1,1 +1,0 @@
-{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Es gibt viele bekannte Industriebereiche in Deutschland, beispielsweise die Automobilherstellung, die Pharmaindustrie, die Chemieindustrie und weitere mehr."]}]}

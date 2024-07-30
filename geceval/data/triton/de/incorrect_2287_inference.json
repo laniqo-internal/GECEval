@@ -1,1 +1,0 @@
-{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Ich möchte dich fragen, ob du am 15. März kommst. Soll ich dich anrufen?"]}]}

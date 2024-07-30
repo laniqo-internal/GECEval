@@ -1,1 +1,0 @@
-{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Michele Rossi\nStrada Maggiore 9\n12345 Città X\nLa Republica\nVia dei Corti 1125\nLugano Città X\n20 Settembre 2011\nEgregia Redazione,\nDue settimane fa ho trascorso le mie vacanze nel \"Residence del Lago\"."]}]}

@@ -1,1 +1,0 @@
-{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Es gibt noch Studienprogramme, die so unflexibel und überholt sind, dass man sogar ein Diplom in Politikwissenschaft erlangen kann, ohne zu wissen, wer beispielsweise der Vorsitzende der Vereinten Nationen ist."]}]}

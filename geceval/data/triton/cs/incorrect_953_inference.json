@@ -1,1 +1,0 @@
-{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Pokud máš schůzku, nezdráhej se dorazit včas. Pozdní příchod je neuctivý a nevhodný."]}]}

@@ -1,1 +1,0 @@
-{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Maria Klausenhof Stadt X. Suche nach einer neuen Wohnung.\n\nSehr geehrte Damen und Herren, ich möchte gerne meine aktuelle Adresse ändern und suche daher nach einer neuen Wohnung."]}]}

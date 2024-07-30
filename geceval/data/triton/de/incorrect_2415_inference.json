@@ -1,1 +1,0 @@
-{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Hallo Maria,\n\nhabe die Korrektur vorgenommen. Der korrigierte Text lautet nun: \"Gruß Maria.\"\n\nWenn ich noch etwas für dich tun kann, lass es mich wissen!\n\nMit freundlichen Grüßen,\n[Ihr Name]"]}]}

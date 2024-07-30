@@ -1,1 +1,0 @@
-{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Der Text ist grammatikalisch korrekt. Eine mögliche Umschreibung könnte lauten: \"Der Feminismus hat Frauen in vielerlei Hinsicht negativ beeinflusst, insbesondere bei folgenden Themen.\""]}]}

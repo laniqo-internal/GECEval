@@ -1,1 +1,0 @@
-{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Det är inga fel i texten. Men om du vill kan du säga \"Jag tycker att det MÄST finnas ett riktigt café i SF\"."]}]}

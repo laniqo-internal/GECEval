@@ -1,5 +1,7 @@
 import json
 import os
+from pathlib import Path
+from typing import Dict, List
 
 
 def get_file_path(base_path, idx, use_triton=True, input=True, language="en"):
@@ -79,6 +81,34 @@ def load_files_to_dict_of_lists(
 
     return result
 
+def load_multi_llm_json_outputs(dir: str, prompt_list: List[str]) -> Dict:
+    result = {}
+    pathlist = Path(dir).glob('**/*.json')
+    for path in pathlist:
+        raw_filename = path.stem
+        model_id = raw_filename.split("_")[0]
+        prompt_id = raw_filename.split("_")[-1]
+        with open(str(path)) as f:
+            data = json.loads(f.read())
+            for lang in data:
+                if lang not in result:
+                    result[lang] = {}
+                for elem in data[lang]:
+                    id = elem['id']
+                    if id not in result[lang]:
+                        result[lang][id] = {
+                            "marked_correct": elem['label'],
+                            "text": elem['content'],
+                            "corrections": []
+                        }
+                    result[lang][id]['corrections'].append({
+                        "prompt_id": int(prompt_id),
+                        "content": elem['processed'],
+                        "model_name": model_id,
+                    })
+        with open("merged_multillm.json", 'w') as out:
+            out.write(json.dumps(result, indent=4, ensure_ascii=False))
+    return result
 
 def read_input(path: str):
     if path.endswith("json"):

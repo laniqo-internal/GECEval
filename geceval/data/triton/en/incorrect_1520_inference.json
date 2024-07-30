@@ -1,1 +1,0 @@
-{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["I went to the theater at 7:30 pm but, to my surprise, the show started at 8:15 pm and so I couldn’t stay here till the end as I had left London, with my group before the end of the show."]}]}

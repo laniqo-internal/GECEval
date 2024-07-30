@@ -1,1 +1,0 @@
-Skolresultat: Det är resultatet av provet som studenterna redan gjort, och dessa resultat ska viska om de kunne klarar provet eller inte.

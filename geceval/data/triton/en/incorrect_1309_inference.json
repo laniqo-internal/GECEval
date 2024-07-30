@@ -1,1 +1,0 @@
-{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["I am good at playing Tennis and I have been learning to swim for three months so it could be a useful training for me."]}]}

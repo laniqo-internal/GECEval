@@ -1,1 +1,0 @@
-{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Här är rättstavade texten: På rasten sitter jag och min klasskamerader i restaurangen och dricker kaffe. Kl. 11:40 äter vi lunsht också."]}]}

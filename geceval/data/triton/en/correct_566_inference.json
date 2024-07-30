@@ -1,1 +1,0 @@
-{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["I must wash the dishes from time to time (I sometimes try to avoid this unpleasant duty) and clean our house."]}]}

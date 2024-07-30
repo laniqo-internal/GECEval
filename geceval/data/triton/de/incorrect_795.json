@@ -1,1 +1,0 @@
-{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["Diese Frage schlägt vor, dass die wirkliche Welt nur der Beruf heißt, jedoch die wirkliche Welt heißt nicht nur die Karriere, sondern auch andere Bereiche des Lebens."]}]}

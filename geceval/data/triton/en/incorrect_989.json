@@ -1,1 +1,0 @@
-{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["At first the show started at 10.15, and it should be at 19.30."]}]}

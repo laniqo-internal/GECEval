@@ -1,1 +1,0 @@
-{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Ahoj,\n\nDoufám, že se máš dobře. Chtěl/a bych jen poslat rychlé pozdravení a říct ti, že na tebe myslím. Měj se krásně a budu se těšit na další zprávu od tebe!\n\nS láskou,\n[Tvoje jméno]"]}]}

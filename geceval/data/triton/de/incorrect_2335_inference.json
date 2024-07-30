@@ -1,1 +1,0 @@
-{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Wenn man für einen kurzen Aufenthalt nach Stadt X kommt, muss man die Entscheidung treffen, was sich besser lohnt: Eine Wohnung zu mieten oder eine für 1.500 Euro pro Quadratmeter zu kaufen."]}]}

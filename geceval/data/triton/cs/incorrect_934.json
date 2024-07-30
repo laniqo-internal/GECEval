@@ -1,1 +1,0 @@
-{"id": "0", "inputs": [{"name": "texts", "shape": [1, 1], "datatype": "BYTES", "parameters": {}, "data": ["Finskí lidí jsou často nehluční, a to je neslušné, jestliže někdo je velmi hlučný na otevřených mist."]}]}

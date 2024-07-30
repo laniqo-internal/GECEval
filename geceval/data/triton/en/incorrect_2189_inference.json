@@ -1,1 +1,0 @@
-{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Everybody knows that, \"present\" presents a problem. \"You know your own task, but what about a task of the other person?\""]}]}

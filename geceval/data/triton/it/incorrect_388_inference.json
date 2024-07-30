@@ -1,1 +1,0 @@
-{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Canton Ticino, Strada Maggiore 7\n12345, Città X, xyz\n\nEgregio Signor/a,\n\nLe scrivo per informarla che le informazioni presenti nel suo annuncio non sono accurate."]}]}

@@ -1,1 +1,0 @@
-{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Det är rätt: \"Det finns så många i världen som inte har tillgång till skola, mat, boende i ett hem eller sogar en plats där de kan vara.\""]}]}

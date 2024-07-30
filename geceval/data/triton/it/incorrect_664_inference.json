@@ -1,1 +1,0 @@
-{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["In Città X, c'è una scuola di lingue straniere, quindi ho la possibilità di imparare l'italiano: la lingua che amo tanto."]}]}

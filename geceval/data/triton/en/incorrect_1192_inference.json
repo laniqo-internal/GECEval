@@ -1,1 +1,0 @@
-{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Another complaint is about the time that the musical show started; the advertisement said it started at 7:30 pm, but it didn't, we had to wait for 45 minutes."]}]}

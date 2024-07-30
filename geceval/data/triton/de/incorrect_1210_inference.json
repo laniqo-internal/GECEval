@@ -1,1 +1,0 @@
-{"id":"0","model_name":"pipeline","model_version":"1","outputs":[{"name":"pipeline_output","datatype":"BYTES","shape":[1,1],"data":["Für diesen Satz korrigiere ich \"teuer\" zu \"teuer\". Der korrekte Satz lautet also: \"Kriminalität ist teuer.\""]}]}
