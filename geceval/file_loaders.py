@@ -20,7 +20,7 @@ def get_file_path(base_path, idx, use_triton=True, input=True, language="en"):
     return False, ""
 
 
-def load_data_to_list_of_dicts(
+def load_files_to_list_of_dicts(
     path, languages=["en"], use_triton_input=True, use_triton_output=True
 ):
     result = {}
@@ -49,7 +49,7 @@ def load_data_to_list_of_dicts(
         return result
 
 
-def load_data_to_dict_of_lists(
+def load_files_to_dict_of_lists(
     path, languages=["en"], use_triton_input=True, use_triton_output=True
 ):
     result = {}

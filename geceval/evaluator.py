@@ -3,8 +3,10 @@ import json
 from enum import Enum
 from typing import List, Optional
 
-from geceval.file_loaders import (load_data_to_dict_of_lists,
-                                  load_data_to_list_of_dicts)
+from geceval.file_loaders import (
+    load_files_to_dict_of_lists,
+    load_files_to_list_of_dicts,
+)
 from geceval.modules.language_tool_module import LanguageToolModule
 from geceval.modules.punctuation_seeker import PunctuationSeekerModule
 from geceval.modules.spell_checker_module import SpellcheckerModule
@@ -48,14 +50,14 @@ class Evaluator:
             )
         return evaluators
 
-    def check_test_set(self, path: str, use_triton=True):
-        data = load_data_to_dict_of_lists(
+    def check_test_set(self, path: str, use_triton: bool = True):
+        data = load_files_to_dict_of_lists(
             path,
             use_triton_input=use_triton,
             use_triton_output=use_triton,
             languages=self.languages,
         )
-        data_list_of_dicts = load_data_to_list_of_dicts(
+        data_list_of_dicts = load_files_to_list_of_dicts(
             path,
             use_triton_input=use_triton,
             use_triton_output=use_triton,
