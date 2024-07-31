@@ -1,0 +1,1 @@
+Ich bin und meine Eltern. Text: Wenn ich ein Auto kaufte, würde ich es mit einem guten Motor ausstatten. Richtiger Text: Wenn ich ein Auto kaufe, würd ich es mit einem guten Motor ausstatten.

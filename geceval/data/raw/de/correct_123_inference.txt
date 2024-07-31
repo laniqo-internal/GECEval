@@ -1,0 +1,1 @@
+...für die Anzahl der Wörter oder Zeichen, die ein Benutzer eingibt.
