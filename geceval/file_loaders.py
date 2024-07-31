@@ -34,8 +34,8 @@ def load_files_to_list_of_dicts(
                 path, idx, use_triton=use_triton_output, input=False, language=language
             )
 
-            if len(output_path) == 0 and len(input_path) == 0:
-                return result
+            if len(output_path) == 0 or len(input_path) == 0:
+                continue
 
             result[language].append(
                 {
@@ -69,8 +69,8 @@ def load_files_to_dict_of_lists(
                 path, idx, use_triton=use_triton_output, input=False, language=language
             )
 
-            if len(output_path) == 0 and len(input_path) == 0:
-                return result
+            if len(output_path) == 0 or len(input_path) == 0:
+                continue
 
             result[language]["idx"].append(idx)
             result[language]["marked_correct"].append(1 if is_correct else 0)

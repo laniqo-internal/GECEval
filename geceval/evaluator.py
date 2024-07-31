@@ -103,7 +103,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "-p", "--test-path", help="Base folder for data.", default="./data"
     )
-    parser.add_argument("-l", "--language", help="Language to process.", default="en")
+    parser.add_argument("-l", "--language", help="Language to process.", default="de")
     parser.add_argument(
         "-t",
         "--use-triton-data",

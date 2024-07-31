@@ -1,0 +1,1104 @@
+{
+    "de": [
+        {
+            "idx": 16,
+            "marked_correct": 1,
+            "before_correction": "Bei uns in Vietnam ist die soziale Leistung nicht so gut wie in Deutschland.",
+            "after__correction": "In Vietnam sind die Sozialleistungen nicht so gut wie in Deutschland.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "sozialleistungen->None, vietnam->None"
+            }
+        },
+        {
+            "idx": 31,
+            "marked_correct": 1,
+            "before_correction": "Aber zumindest sind sich viel mehr Frauen heute über ihre Rechte im Klaren als vor ungefähr 40 Jahren.",
+            "after__correction": "Aber zumindest sind sich viele mehr Frauen heute über ihre Rechte im Klaren als vor etwa 40 Jahren.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "jahren->fahren, frauen->fragen"
+            }
+        },
+        {
+            "idx": 73,
+            "marked_correct": 1,
+            "before_correction": "Zweitens sind Männer in der Wirklichkeit nur schwache Geschlechtsobjekte, die eine schlaue Frau leicht verführen könnte, um irgendeinen persönlichen oder beruflichen Zweck zu erfüllen.",
+            "after__correction": "Zweitens sind Männer in der Realität nur schwache Geschlechtsobjekte, die eine schlaue Frau leicht verführen könnte, um irgend einen persönlichen oder beruflichen Zweck zu erreichen.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "zweck->zwecks, frau->frag, männer->meiner, geschlechtsobjekte->None, realität->realiter"
+            }
+        },
+        {
+            "idx": 96,
+            "marked_correct": 1,
+            "before_correction": "Wir kämpfen immer für etwas, das ist sogar ein Teil unseres Lebens.",
+            "after__correction": "Wir kämpfen immer für etwas, was sogar ein Teil unseres Lebens ist.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "lebens->leben"
+            }
+        },
+        {
+            "idx": 103,
+            "marked_correct": 1,
+            "before_correction": "Eure Rechte?",
+            "after__correction": "Ihre Rechte?",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "no errors found"
+            }
+        },
+        {
+            "idx": 123,
+            "marked_correct": 1,
+            "before_correction": "Es gibt keine Beschränkungen mehr...",
+            "after__correction": "...für die Anzahl der Wörter oder Zeichen, die ein Benutzer eingibt.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "Offset 3, length 3, Rule ID: AUSLASSUNGSPUNKTE_LEERZEICHEN\nMessage: Nach Auslassungspunkten sollte in der Regel ein geschütztes Leerzeichen stehen, außer wenn es sich um eine Auslassung im Wortinneren handelt.\nSuggestion:  für\n...für die Anzahl der Wörter oder Zeichen, die...\n   ^^^",
+                "Spell checker": "zeichen->reichen, wörter->werter, anzahl->anzahle, benutzer->benutzen"
+            }
+        },
+        {
+            "idx": 151,
+            "marked_correct": 1,
+            "before_correction": "Die zwei Mörder stehen vor ihm.",
+            "after__correction": "Die beiden Mörder stehen vor ihm.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "mörder->fördert"
+            }
+        },
+        {
+            "idx": 174,
+            "marked_correct": 1,
+            "before_correction": "Der Feminismus ist seit vielen Jahren noch ein umstrittenes Thema.",
+            "after__correction": "Der Feminismus ist seit vielen Jahren immer noch ein umstrittenes Thema.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "jahren->fahren, thema->theta, feminismus->None"
+            }
+        },
+        {
+            "idx": 175,
+            "marked_correct": 1,
+            "before_correction": "Es gibt heutzutage viel zu viele Frauen, die sagen,",
+            "after__correction": "dass sie Männer brauchen, um glücklich zu sein.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "Offset 0, length 4, Rule ID: UPPERCASE_SENTENCE_START\nMessage: Dieser Satz fängt nicht mit einem großgeschriebenen Wort an.\nSuggestion: Dass\ndass sie Männer brauchen, um glücklich zu se...\n^^^^",
+                "Spell checker": "männer->meiner"
+            }
+        },
+        {
+            "idx": 211,
+            "marked_correct": 1,
+            "before_correction": "Vielleicht haben die Eltern dich beeinflusst oder (hoffentlich nicht) gefördert.",
+            "after__correction": "Vielleicht haben die Eltern dich beeinflusst oder (hoffentlich nicht) unterstützt.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "eltern->altern"
+            }
+        },
+        {
+            "idx": 254,
+            "marked_correct": 1,
+            "before_correction": "Heutzutage ist die Kriminalität ein nicht zu unterschätzendes Problem.",
+            "after__correction": "Heutzutage ist die Kriminalität ein nicht zu unterschätzendes Problem.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "kriminalität->None, problem->proben"
+            }
+        },
+        {
+            "idx": 284,
+            "marked_correct": 1,
+            "before_correction": "Die obengenannten Informationen haben nur die Gründe und Vor- und Nachteile der Kriminalität erwähnt.",
+            "after__correction": "Die obigen genannten Informationen haben nur die Gründe und Vor- sowie Nachteile der Kriminalität erwähnt.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "nachteile->nacheile, kriminalität->None, informationen->informationell"
+            }
+        },
+        {
+            "idx": 321,
+            "marked_correct": 1,
+            "before_correction": "Über ein persönliches Gespräch würde ich mich sehr freuen.",
+            "after__correction": "Ich würde mich über ein persönliches Gespräch sehr freuen.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "gespräch->gesprächig"
+            }
+        },
+        {
+            "idx": 335,
+            "marked_correct": 1,
+            "before_correction": "Welche Sprache benutzt man oft und was ist der Wert der Sprache?",
+            "after__correction": "Welche Sprache wird häufig verwendet, und welchen Stellenwert hat die Sprache?",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "stellenwert->stellender, sprache->sprach"
+            }
+        },
+        {
+            "idx": 353,
+            "marked_correct": 1,
+            "before_correction": "Ich bedanke mich im Voraus.",
+            "after__correction": "Ich danke Ihnen im Voraus.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "no errors found"
+            }
+        },
+        {
+            "idx": 364,
+            "marked_correct": 1,
+            "before_correction": "Folglich finde ich dort auch die Geborgenheit.",
+            "after__correction": "Folglich finde ich dort auch die Geborgenheit.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "geborgenheit->None"
+            }
+        },
+        {
+            "idx": 444,
+            "marked_correct": 1,
+            "before_correction": "Liebe Grüße dein Tobias",
+            "after__correction": "Liebe Grüße, dein Tobias",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "Offset 0, length 12, Rule ID: MIT_FREUNDLICHEN_GRUESSEN_KOMMA\nMessage: Nach der Grußformel „Liebe Grüße“ sollte kein Satzzeichen stehen.\nSuggestion: Liebe Grüße\nLiebe Grüße, dein Tobias\n^^^^^^^^^^^^",
+                "Spell checker": "tobias->None"
+            }
+        },
+        {
+            "idx": 452,
+            "marked_correct": 1,
+            "before_correction": "Mit diesem Thema wuerde ich mich gerne auseinandersetzen.",
+            "after__correction": "Ich würde mich gerne mit diesem Thema befassen.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "thema->theta"
+            }
+        },
+        {
+            "idx": 455,
+            "marked_correct": 1,
+            "before_correction": "Doch leider wurde ich gleich zu Beginn sehr enttäuscht.",
+            "after__correction": "Doch leider wurde ich schon bei der ersten Begegnung sehr enttäuscht.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "begegnung->begegnen"
+            }
+        },
+        {
+            "idx": 465,
+            "marked_correct": 1,
+            "before_correction": "Firma zu erweitern.",
+            "after__correction": "Unternehmen zu erweitern.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "no errors found"
+            }
+        },
+        {
+            "idx": 495,
+            "marked_correct": 1,
+            "before_correction": "kommen.",
+            "after__correction": "Kommen.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "no errors found"
+            }
+        },
+        {
+            "idx": 570,
+            "marked_correct": 1,
+            "before_correction": "Viele Grüße.",
+            "after__correction": "Viele Grüße.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "Offset 0, length 12, Rule ID: MIT_FREUNDLICHEN_GRUESSEN_KOMMA\nMessage: Nach der Grußformel „Viele Grüße“ sollte kein Satzzeichen stehen.\nSuggestion: Viele Grüße\nViele Grüße.\n^^^^^^^^^^^^",
+                "Spell checker": "no errors found"
+            }
+        },
+        {
+            "idx": 581,
+            "marked_correct": 1,
+            "before_correction": "Es steht nämlich nicht genug Infrastruktur für Migranten zur Verfügung.",
+            "after__correction": "Es stehen nämlich nicht ausreichend Infrastrukturen für Migranten zur Verfügung.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "infrastrukturen->None, migranten->None, verfügung->verfügen"
+            }
+        },
+        {
+            "idx": 599,
+            "marked_correct": 1,
+            "before_correction": "Am Wochenende wollte ich nach Stadt X fahren.",
+            "after__correction": "Am Wochenende wollte ich nach Stadt X fahren.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "wochenende->wohnende, stadt->statt, x->i"
+            }
+        },
+        {
+            "idx": 657,
+            "marked_correct": 0,
+            "before_correction": "Auf meiner Verfassung setzt die deutsche Regierung eine Politik zur Armutbekämpfung um.",
+            "after__correction": "Aufgrund der wirtschaftlichen Lage setzt die Bundesregierung eine Armutsbekämpfungsstrategie um.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "lage->lange, armutsbekämpfungsstrategie->None, bundesregierung->None"
+            }
+        },
+        {
+            "idx": 677,
+            "marked_correct": 0,
+            "before_correction": "Das ist das Problem von jeden, nicht von Einen.",
+            "after__correction": "Das ist ein Problem jedes Einzelnen, aber kein Problem eines Einzelnen.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "problem->proben"
+            }
+        },
+        {
+            "idx": 709,
+            "marked_correct": 0,
+            "before_correction": "In Realität ist es falsch.",
+            "after__correction": "In der Tat ist das falsch.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "no errors found"
+            }
+        },
+        {
+            "idx": 727,
+            "marked_correct": 0,
+            "before_correction": "Das Ergebnis ist eine schwach ekonomie.",
+            "after__correction": "Das Ergebnis ist eine schwache Wirtschaft.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "wirtschaft->wirtschafte, ergebnis->ergebenes"
+            }
+        },
+        {
+            "idx": 833,
+            "marked_correct": 0,
+            "before_correction": "Diese Ereignisse haben doch ein Einfluss auf die Täter sowie die Opfer, der sich dadurch verbunden lassen.",
+            "after__correction": "Diese Ereignisse haben einen Einfluss sowohl auf die Täter wie auch auf die Opfer, von denen man sich dadurch verbindet.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "Offset 59, length 8, Rule ID: SOWOHL_UND\nMessage: Die empfohlene Satzverbindung lautet ‚sowohl ... als auch‘.\nSuggestion: als auch\n...ben einen Einfluss sowohl auf die Täter wie auch auf die Opfer, von denen man sich dadur...\n                                           ^^^^^^^^",
+                "Spell checker": "täter->toter, ereignisse->ereignislose, einfluss->einfloss"
+            }
+        },
+        {
+            "idx": 889,
+            "marked_correct": 0,
+            "before_correction": "Ich studiere Journalistik in der haupte Universität von Russland.",
+            "after__correction": "Ich studiere Journalismus an der Hauptuniversität von Russland.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "hauptuniversität->None, journalismus->None"
+            }
+        },
+        {
+            "idx": 927,
+            "marked_correct": 0,
+            "before_correction": "Hier kannst du üben und üben und viel wertvolles Wissen bekommen, das nicht möglich ist in einer Unterrichtsstunde zu bekommen, denn es ist einfach eine \\\" andere Welt \\\".",
+            "after__correction": "Hier kannst du üben und lernen und viel wertvolles Wissen erhalten, was man in einer Unterrichtsstunde nicht bekommt, denn es ist einfach eine \"andere Welt\".",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "welt->weit, unterrichtsstunde->None"
+            }
+        },
+        {
+            "idx": 962,
+            "marked_correct": 0,
+            "before_correction": "Der Feminismus hat die Fragen und die Probleme der Frauen beschränkt und die möglichen Absichten reduziert, zumal es eine Bewegung war, die so mit der revolutionären Bewegung, zum Beispiel 1968, verflochten wurde, dass es nachher geschwiegen wurde und als ein unernsthafte Strömung betrachtet, die sich nur mit sexuellen Themen beschäftigt.",
+            "after__correction": "Der Feminismus hat die Fragen und die Probleme der Frauen eingegrenzt und die möglichen Absichten reduziert, zumal es eine Bewegung war, die so mit der revolutionären Bewegung, zum Beispiel 1968, verwoben wurde, dass sie danach schweigen musste und als eine unwichtige Strömung angesehen wird, die sich nur mit sexuellen Themen befasst.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "bewegung->bewegen, frauen->fragen, beispiel->bespiele, strömung->strömen, themen->nehmen, feminismus->None, probleme->probiere, absichten->abdichten"
+            }
+        },
+        {
+            "idx": 976,
+            "marked_correct": 0,
+            "before_correction": "Sollte Europa ein Gesetz vorschlagen, die die Staaten unbedingt zwingt, eine Frau als Chef auszuwählen?",
+            "after__correction": "Solltet ihr ein Gesetz vorschlagen, das die Staaten dazu verpflichtet, eine Frau zur Führung zu wählen?",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "gesetz->gesetzt, staaten->starten, frau->frag, führung->führen"
+            }
+        },
+        {
+            "idx": 1014,
+            "marked_correct": 0,
+            "before_correction": "Man kann die grossen Anzeigen am Fernseher sehen:",
+            "after__correction": "Man kann die großen Anzeigen am Fernseher sehen.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "fernseher->fernsehen"
+            }
+        },
+        {
+            "idx": 1017,
+            "marked_correct": 0,
+            "before_correction": "In so einem Fall ist es mir klar, dass die Leute, die zum Verhaften des Verbrechers fürhende Informationen Polizei geben, noch schön von der Verkehrsgeschäft bezahlt werden.",
+            "after__correction": "In so einem Fall ist es mir klar, dass die Menschen, die zur Festnahme des Täters vorläufige Informationen an die Polizei weitergeben, auch eine Belohnung erhalten.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "festnahme->festnehme, täters->toter, menschen->wünschen, fall->all, belohnung->belohnen, informationen->informationell, polizei->polige"
+            }
+        },
+        {
+            "idx": 1046,
+            "marked_correct": 0,
+            "before_correction": "Außerdem, führen die Universitätskursen allmählich den praktischen Element ein - Beispiele davon sind das oft notwendige Jahr im Ausland für Fremdsprachenstudien, oder Jahren im Betrieb für künftige Ärzte, Rechtsanwälter und Ingenieuren.",
+            "after__correction": "Außerdem führen die Universitätslehrgänge allmählich das praktische Element ein – Beispiele dafür sind das häufige Auslandsjahr für Sprachstudien oder Jahre im Betrieb für zukünftige Ärzte, Anwälte und Ingenieure.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "ingenieure->None, auslandsjahr->None, ärzte->ätzte, universitätslehrgänge->None, jahre->fahre, element->elegant, anwälte->anwählte, sprachstudien->None, beispiele->bespiele"
+            }
+        },
+        {
+            "idx": 1061,
+            "marked_correct": 0,
+            "before_correction": "Jemand, der gegen geschlechtliche Unequalität spricht ist als \\\" Feminist \\\" gesegen, und Feministen hat heute einen schlechten Ruf.",
+            "after__correction": "Wer sich gegen geschlechtliche Ungleichheit ausspricht wird als \"Feminist\" beschimpft, und Feministinnen haben heute einen schlechten Ruf.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "Offset 44, length 10, Rule ID: KOMMA_ZWISCHEN_HAUPT_UND_NEBENSATZ_2\nMessage: Hier sollte ein Komma eingefügt werden, wenn es sich um einen Haupt- und Nebensatz oder zwei Hauptsätze handelt.\nSuggestion: ausspricht,\n...sich gegen geschlechtliche Ungleichheit ausspricht wird als \"Feminist\" beschimpft, und Fem...\n                                           ^^^^^^^^^^",
+                "Spell checker": "feminist->feminine, ungleichheit->None, feministinnen->None"
+            }
+        },
+        {
+            "idx": 1080,
+            "marked_correct": 0,
+            "before_correction": "Die Möglichkeiten konnte endlos sein.",
+            "after__correction": "Die Möglichkeiten können unendlich sein.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "möglichkeiten->None"
+            }
+        },
+        {
+            "idx": 1087,
+            "marked_correct": 0,
+            "before_correction": "Als Ergebnis, fürchtet es uns zu glauben, dass Kriminalität sich nicht aus zahlt.",
+            "after__correction": "Als Ergebnis befürchten wir, dass die Kriminalität nicht durch Bezahlung reduziert werden kann.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "ergebnis->ergebenes, kriminalität->None, bezahlung->bezahlen"
+            }
+        },
+        {
+            "idx": 1114,
+            "marked_correct": 0,
+            "before_correction": "Es gab vorher ein deutsches System, das langer Zeit dauert hat und nicht praxisorientiert war.",
+            "after__correction": "Es gab zuvor ein deutsches System, dass lange Zeit gedauert hat und praktisch orientierungslos war.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "orientierungslos->None, system->bestem"
+            }
+        },
+        {
+            "idx": 1121,
+            "marked_correct": 0,
+            "before_correction": "Aber, es gibt auch der Argument, dass dieses alte deutsche System negativ ist, weil es gar nicht praxisorientiert ist.",
+            "after__correction": "Aber es gibt das Argument, dass dieses alte deutsche System negativ ist, da es nicht praktisch orientiert ist.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "argument->None, system->bestem"
+            }
+        },
+        {
+            "idx": 1135,
+            "marked_correct": 0,
+            "before_correction": "Das neue System fordert flexibilität, ist schneller und praxisorientierter als das alte deutsche System.",
+            "after__correction": "Das neue System erfordert mehr Flexibilität, ist schneller und praktischer als das frühere deutsche System.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "flexibilität->None, system->bestem"
+            }
+        },
+        {
+            "idx": 1136,
+            "marked_correct": 0,
+            "before_correction": "Man hat flexibilität im neuen System, weil man sich für eine andere Universität entscheiden kann:",
+            "after__correction": "Man hat mehr Flexibilität im neuen System, da man sich für eine andere Hochschule entscheiden kann.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "flexibilität->None, hochschule->None, system->bestem"
+            }
+        },
+        {
+            "idx": 1138,
+            "marked_correct": 0,
+            "before_correction": "Damit bekommt er mehr Erfahrung und ist er gut auf die wirkliche Welt vorbereitet.",
+            "after__correction": "Dadurch erhält er mehr Erfahrungen und ist er gut auf die reale Welt vorbereitet.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "welt->weit, erfahrungen->erfahrenen"
+            }
+        },
+        {
+            "idx": 1166,
+            "marked_correct": 0,
+            "before_correction": "Als Frau, muss man jetzt nicht mehr so ungleich fühlen.",
+            "after__correction": "Als Frau braucht man heutzutage nicht mehr so ungleiche Gefühle zu haben.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "gefühle->gefühlt, frau->frag"
+            }
+        },
+        {
+            "idx": 1194,
+            "marked_correct": 0,
+            "before_correction": "Die spielen auch manchmal keine Rolle bei der Befrüchtung eines Kindes.",
+            "after__correction": "Die Spielzeuge spielen auch manchmal keine Rolle beim Befruchten eines Kindes.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "kindes->indes, spielzeuge->None"
+            }
+        },
+        {
+            "idx": 1209,
+            "marked_correct": 0,
+            "before_correction": "Und Wenn man keine Strafen bekommt, dann zahlt Kriminalität sich aus, aber gibt es tausende Leute die in Gefängnis sind oder andere Strafen bekommt.",
+            "after__correction": "Und wenn man keine Strafe bekommt, dann zahlt sich Kriminalität aus, aber gibt es Tausende von Menschen, die im Gefängnis sitzen oder andere Strafen bekommen.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "kriminalität->None, menschen->wünschen, gefängnis->None"
+            }
+        },
+        {
+            "idx": 1219,
+            "marked_correct": 0,
+            "before_correction": "Die Nachteile sind variante und gibt es viel zu verloren.",
+            "after__correction": "Die Nachteile sind vielfältig, und es wird vieles verloren.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "nachteile->nacheile"
+            }
+        },
+        {
+            "idx": 1224,
+            "marked_correct": 0,
+            "before_correction": "Für manche ist Kriminalität ein Lebestil.",
+            "after__correction": "Für manche ist Kriminalität ein Lebensstil.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "lebensstil->None, kriminalität->None"
+            }
+        },
+        {
+            "idx": 1237,
+            "marked_correct": 0,
+            "before_correction": "Wenn man über die Satz gut denkt, ist es möglich zu sagen dass Kriminalität sich doch ganz gut auszahlt was Geld betrifft.",
+            "after__correction": "Wenn man über das Verbrechen nachdenkt, ist es möglich zu sagen, dass Kriminalität im Hinblick auf Geld durchaus gute Auswirkungen hat.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "auswirkungen->auswirkenden, kriminalität->None, hinblick->hinblicke, geld->gelb"
+            }
+        },
+        {
+            "idx": 1309,
+            "marked_correct": 0,
+            "before_correction": "Auch wenn eine Fraue ein gute Arbeitstelle hat, sogar die gleiche Stelle wie ein Mann, bekommt sie immer noch weniger Geld.",
+            "after__correction": "Auch wenn eine Frau eine gute Arbeitsstelle hat, sogar die gleiche Stelle wie ein Mann, bekommt sie immer noch weniger Geld.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "mann->kann, arbeitsstelle->None, frau->frag, geld->gelb"
+            }
+        },
+        {
+            "idx": 1361,
+            "marked_correct": 0,
+            "before_correction": "Mit diesem Risiko zahlt sich Kriminalität besonders nicht aus.",
+            "after__correction": "Mit diesem Risiko zahlt sich die Kriminalität insbesondere nicht aus.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "risiko->None, kriminalität->None"
+            }
+        },
+        {
+            "idx": 1383,
+            "marked_correct": 0,
+            "before_correction": "Heute, nutzten viele Leute Krimalität um Geld zu verdienen.",
+            "after__correction": "Heute nutzen viele Menschen Kriminalität um Geld zu verdienen.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "Offset 40, length 3, Rule ID: KOMMA_INFINITIVGRUPPEN\nMessage: Wenn es sich hier um eine Infinitivgruppe (‚zu‘ + Grundform) handelt, muss in der Regel ein Komma gesetzt werden.\nSuggestion: , um\n...Heute nutzen viele Menschen Kriminalität um Geld zu verdienen.\n                                           ^^^",
+                "Spell checker": "kriminalität->None, menschen->wünschen, geld->gelb"
+            }
+        },
+        {
+            "idx": 1385,
+            "marked_correct": 0,
+            "before_correction": "Im moment ist Arbeitslösigkeit die höchste seit des Endes des zweiten Zwelt Krieg.",
+            "after__correction": "Derzeit sind Arbeitslosenzahlen die höchsten seit dem Ende des Zweiten Weltkriegs.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "weltkriegs->None, arbeitslosenzahlen->None"
+            }
+        },
+        {
+            "idx": 1397,
+            "marked_correct": 0,
+            "before_correction": "Einerseits, könnte mann sagen, dass Kriminalität sich aus zahlt, weil es einfach ist in einer Gefängnis zu leben.",
+            "after__correction": "Einerseits kann man sagen, dass Kriminalität sich auszahlt, da es einfach sei im Gefängnis zu leben.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "kriminalität->None, gefängnis->None"
+            }
+        },
+        {
+            "idx": 1431,
+            "marked_correct": 0,
+            "before_correction": "Aber für manche Frauen, die Feministen sind, ist das keine Möglichkeit, weil sie glauben, dass sie eine wichtige Beruf haben sollen, und mit der Männer arbeiten.",
+            "after__correction": "Aber für manche Frauen, die Feministinnen sind, ist das keine Option, da sie meinen, einen wichtigen Job zu haben und mit Männern zusammenarbeiten wollen.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "option->optional, frauen->fragen, feministinnen->None, job->ob, männern->ändern"
+            }
+        },
+        {
+            "idx": 1519,
+            "marked_correct": 0,
+            "before_correction": "Egal wie wir dies anschauen, müssen wir erkennen, dass die Krimialität das Land und Volk belästigt und deswegen steht es unter der Kontrolle der Polizei.",
+            "after__correction": "Unabhängig davon, wie wir das sehen, müssen wir erkennen, dass die Kriminalität das Land und seine Bürger bedroht und daher stehen sie unter polizeilicher Aufsicht.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "aufsicht->aufsieht, land->lang, bürger->bürge, kriminalität->None"
+            }
+        },
+        {
+            "idx": 1544,
+            "marked_correct": 0,
+            "before_correction": "Auch, zahlen viele Frauen weniger als Männer.",
+            "after__correction": "Auch wenn zahlreiche Frauen weniger verdienen als Männer.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "männer->meiner, frauen->fragen"
+            }
+        },
+        {
+            "idx": 1545,
+            "marked_correct": 0,
+            "before_correction": "Den Interessen der Frauen hat, seit die achtzehnten jahrhundert, verändert, zum Beispiel, viele Frauen wollen arbeiten statt eine Familie haben und Feminismus hat dieser Interessen erkennen.",
+            "after__correction": "Seit dem 18. Jahrhundert sind die Interessen von Frauen geändert worden; zum Beispiel möchten viele Frauen arbeiten anstelle einer Familie zu gründen, und der Feminismus hat diese Interessen erkannt.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "familie->familiäre, frauen->fragen, beispiel->bespiele, interessen->interessant, jahrhundert->None, feminismus->None"
+            }
+        },
+        {
+            "idx": 1572,
+            "marked_correct": 0,
+            "before_correction": "zum Beispiel wie man sich bei einem Unternehm verhalten soll und Anliches.",
+            "after__correction": "Zum Beispiel, wie man sich bei einer Bewerbung verhalten sollte und andere Dinge.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "beispiel->bespiele, dinge->ginge, bewerbung->bewerben"
+            }
+        },
+        {
+            "idx": 1587,
+            "marked_correct": 0,
+            "before_correction": "Es ist erfoderlich die Gründen für diese Krise sind und was verantwortlich ist, ist die Bankers, die zu viel in gefärlichen Märkten und Börsen investierten.",
+            "after__correction": "Es ist notwendig zu erfahren welche Gründe für diese Krise vorliegen und wer dafür verantwortlich ist - es sind die Banker, die zu viel in riskante Märkte und an der Börse investiert haben.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "krise->kreise, märkte->merkte, banker->blanker, börse->böse"
+            }
+        },
+        {
+            "idx": 1645,
+            "marked_correct": 0,
+            "before_correction": "Und ich wollte mit dem Zug fahren, mit \\\" ICE \\\" ist am schnellsten.",
+            "after__correction": "Ich wollte mit der Bahn fahren, die mit \"ICE\" am schnellsten ist.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "ice->ich"
+            }
+        },
+        {
+            "idx": 1668,
+            "marked_correct": 0,
+            "before_correction": "Die ersten Erfahrungen im Verkauf habe ich schon gesammelt, das heißt während der Sommerferien habe ich in einem Computer Laden gearbeitet.",
+            "after__correction": "Die ersten Erfahrungen im Verkauf habe ich bereits gesammelt, d. h., dass ich während meiner Sommerferien in einem Computershop gearbeitet habe.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "h->oh, computershop->None, sommerferien->None, erfahrungen->erfahrenen"
+            }
+        },
+        {
+            "idx": 1677,
+            "marked_correct": 0,
+            "before_correction": "Mich würde gern interessieren, wie sieht es mit Aufenthaltsformalitäten aus.",
+            "after__correction": "Ich wäre gerne daran interessiert, wie es bei der Beantragung von Aufenthaltserlaubnissen aussieht.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "beantragung->beantragen, aufenthaltserlaubnissen->None"
+            }
+        },
+        {
+            "idx": 1686,
+            "marked_correct": 0,
+            "before_correction": "Liebe Julia, ich habe eine Fahrkarte für eine woche Urlaub nach Paris.",
+            "after__correction": "Liebe Julia, ich habe eine Fahrkarte für einen Wochenurlaub nach Paris.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "wochenurlaub->None, fahrkarte->fahrbare, paris->darin, julia->None"
+            }
+        },
+        {
+            "idx": 1690,
+            "marked_correct": 0,
+            "before_correction": "Wenn Ja, kannst du mir telefonisch bescheid sagen.",
+            "after__correction": "Wenn ja, dann kannst du es mich telefonisch mitteilen.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "no errors found"
+            }
+        },
+        {
+            "idx": 1718,
+            "marked_correct": 0,
+            "before_correction": "Ich musste nicht nur auf das Baby aufpassen sonder noch für alle kochen.",
+            "after__correction": "Ich musste nicht nur auf das Baby aufpas­sen, sondern auch für alle koche­n.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "aufpas->aufs, sen->den, baby->habe, n->in"
+            }
+        },
+        {
+            "idx": 1720,
+            "marked_correct": 0,
+            "before_correction": "Ich habe versucht Ihr anzurufen, leider gingen Sie auch nicht dran.",
+            "after__correction": "Ich habe versucht, euch anzurufen, aber es hat leider nicht geklappt.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "no errors found"
+            }
+        },
+        {
+            "idx": 1730,
+            "marked_correct": 0,
+            "before_correction": "Zum Treiben der Karriere überlegt man natürlich der Bedarf der Sprache.",
+            "after__correction": "Um eine Karriere zu machen, muss man sich selbstverständlich die Anforderungen der Sprache bewusst sein.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "karriere->kartiere, anforderungen->anfordernden, sprache->sprach"
+            }
+        },
+        {
+            "idx": 1741,
+            "marked_correct": 0,
+            "before_correction": "August 2011 Betreff: Beschwerde über ihre Werbeanzeige.",
+            "after__correction": "August 2011 Betreff: Beschwerde wegen ihrer Werbung.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "werbung->werben, beschwerde->beschwere, august->angst, betreff->betreffs"
+            }
+        },
+        {
+            "idx": 1763,
+            "marked_correct": 0,
+            "before_correction": "Ich wollte bei dir paar Tage besuch bleiben.",
+            "after__correction": "Ich wollte ein paar Tage bei dir bleiben.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "no errors found"
+            }
+        },
+        {
+            "idx": 1810,
+            "marked_correct": 0,
+            "before_correction": "Wenn Man in Deutschland lebt, muss man mit den Leuten kommunizieren, Ideen austauschen, können.",
+            "after__correction": "Wenn man in Deutschland lebt, muss man mit den Menschen kommunizieren, Ideen austauschen, kooperieren können.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "ideen->den, menschen->wünschen"
+            }
+        },
+        {
+            "idx": 1840,
+            "marked_correct": 0,
+            "before_correction": "Ob du die Fahrkarte haben möchtest denn du muss am 17 März um 4 Uhr bereit sein.",
+            "after__correction": "Ob du die Fahrkarte haben willst, denn dann musst du am 17. März um 4 Uhr bereit sein.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "uhr->ihr, märz->mir, fahrkarte->fahrbare"
+            }
+        },
+        {
+            "idx": 1841,
+            "marked_correct": 0,
+            "before_correction": "wann kannst du die BusFahrkarte mit nehmen?",
+            "after__correction": "Wann kannst du die Bustickets kaufen?",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "bustickets->besticktes"
+            }
+        },
+        {
+            "idx": 1871,
+            "marked_correct": 0,
+            "before_correction": "Bleiben wir in Kontakt, mit Freundlichen Grüssen Michael Winkelmann",
+            "after__correction": "Bitte bleiben Sie in Kontakt! Mit freundlichen Grüßen, Michael Winkelmann",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "Offset 30, length 24, Rule ID: MIT_FREUNDLICHEN_GRUESSEN_KOMMA\nMessage: Nach der Grußformel „Mit freundlichen Grüßen“ sollte kein Satzzeichen stehen.\nSuggestion: Mit freundlichen Grüßen\nBitte bleiben Sie in Kontakt! Mit freundlichen Grüßen, Michael Winkelmann\n                              ^^^^^^^^^^^^^^^^^^^^^^^^",
+                "Spell checker": "kontakt->intakt, michael->None, winkelmann->None"
+            }
+        },
+        {
+            "idx": 1895,
+            "marked_correct": 0,
+            "before_correction": "Sehr geehrte Damen und Herren, Ich möchte eine wohnen und 3 Zimmer und Balkon und Garage und Garten und fenster Ich möchte ein küch groß Ich habe Keller was kostet its 500 E Viel Gresß",
+            "after__correction": "Sehr geehrte Damen und Herren, ich suche nach einer Wohnung mit drei Zimmern sowie einem Balkon, einer Garage, einem Garten und Fenstern. Eine große Küche wäre auch von Vorteil. Außerdem verfüge ich über einen Keller. Wie viel würde das alles kosten? Das Gebäude hat etwa 50 Quadratmeter Grundfläche.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "damen->kamen, gebäude->gebärde, vorteil->verteil, fenstern->gestern, garage->gerade, balkon->backen, küche->koche, herren->zerren, wohnung->wohnen, quadratmeter->None, garten->warten, keller->heller, grundfläche->grundfalsche"
+            }
+        },
+        {
+            "idx": 1923,
+            "marked_correct": 0,
+            "before_correction": "Können wir ein besichtigung termin Vereinbaren?",
+            "after__correction": "Können wir einen Besichtigungstermin vereinbaren?",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "besichtigungstermin->None"
+            }
+        },
+        {
+            "idx": 1928,
+            "marked_correct": 0,
+            "before_correction": "Wie es der Mutter des Babys geht?",
+            "after__correction": "Wie es der Mutter des Babys geht?",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "mutter->munter, babys->bares"
+            }
+        },
+        {
+            "idx": 1956,
+            "marked_correct": 0,
+            "before_correction": "Man kann so sagen, dass alle mögliche Haus im Zeitung stand.",
+            "after__correction": "Man könnte sagen, dass alle möglichen Häuser in der Zeitung stehen.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "häuser->härter, zeitung->zeitig"
+            }
+        },
+        {
+            "idx": 1966,
+            "marked_correct": 0,
+            "before_correction": "Ich habe zwei hund und ein Katz.",
+            "after__correction": "Ich habe zwei Hunde und eine Katze.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "hunde->runde, katze->kotze"
+            }
+        },
+        {
+            "idx": 2039,
+            "marked_correct": 0,
+            "before_correction": "Ich habe seh viel interesse für elektronischer Datenverarbeitung.",
+            "after__correction": "Ich habe sehr viel Interesse an der elektronischen Datenverarbeitung.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "interesse->None, datenverarbeitung->None"
+            }
+        },
+        {
+            "idx": 2058,
+            "marked_correct": 0,
+            "before_correction": "Viele, liebe Gruße Deine Freundin",
+            "after__correction": "Liebe Grüße von deiner Freundin",
+            "feedback": {
+                "Punctuation seeker": "Punctuation mistakes found. Not found punctuation marks from set ., ,, !, ?, `, ', \", -, ;",
+                "Language tool": "no errors found",
+                "Spell checker": "freundin->freund"
+            }
+        },
+        {
+            "idx": 2155,
+            "marked_correct": 0,
+            "before_correction": "bin und meine Eletern.",
+            "after__correction": "Ich bin und meine Eltern. Text: Wenn ich ein Auto kaufte, würde ich es mit einem guten Motor ausstatten. Richtiger Text: Wenn ich ein Auto kaufe, würd ich es mit einem guten Motor ausstatten.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "Offset 146, length 4, Rule ID: ICH_KOENNT\nMessage: Die korrekte Verbform scheint hier „würde“ zu sein.\nSuggestion: würde\n...ichtiger Text: Wenn ich ein Auto kaufe, würd ich es mit einem guten Motor ausstatten...\n                                           ^^^^",
+                "Spell checker": "motor->toter, würd->wird, eltern->altern, text->ext, auto->auf"
+            }
+        },
+        {
+            "idx": 2180,
+            "marked_correct": 0,
+            "before_correction": "Im Ausland muss man der Kultur des Gastlandes Kennenlernen, sowie die Sprache des Gastlandes.",
+            "after__correction": "Im Ausland muss man sich der Kultur des Gastlandes vertraut machen sowie die Sprache des Gastlandes lernen.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "gastlandes->None, sprache->sprach, kultur->kalter, ausland->auffand"
+            }
+        },
+        {
+            "idx": 2206,
+            "marked_correct": 0,
+            "before_correction": "Meine Meinung sind Deutschlerne macht mich Spass.",
+            "after__correction": "Meine Meinung ist, dass Deutschlerner Spaß machen.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "meinung->meinen, spaß->saß, deutschlerner->deutscherer"
+            }
+        },
+        {
+            "idx": 2208,
+            "marked_correct": 0,
+            "before_correction": "Ich brauche das zu Kommunikation mit andere leuten.",
+            "after__correction": "Ich benötige es für die Kommunikation mit anderen Leuten.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "kommunikation->kommunikativ, leuten->lebten"
+            }
+        },
+        {
+            "idx": 2219,
+            "marked_correct": 0,
+            "before_correction": "Ich bin 34 Jahre alte, verheiratet, und ein 5 jähriges Sohn.",
+            "after__correction": "Ich bin 34 Jahre alt, verheiratet, und habe einen 5jährigen Sohn.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "Offset 50, length 9, Rule ID: XJAEHRIG\nMessage: Die Kombination Zahl und ‚jährig‘ wird mit Bindestrich geschrieben.\nSuggestion: 5-jährigen\n... Jahre alt, verheiratet, und habe einen 5jährigen Sohn.\n                                           ^^^^^^^^^",
+                "Spell checker": "sohn->sahn, jahre->fahre, 5jährigen->jährigen"
+            }
+        },
+        {
+            "idx": 2235,
+            "marked_correct": 0,
+            "before_correction": "Wenn meine Bewerbung Ihre Interesse gewecht hat, würde ich mich über eine Einladung zu persönameischen Gespräch freuen Mit freundlichen Grüßen Maria Müller Anlagen: Lebenslauf Zeugnisse",
+            "after__correction": "Wenn meine Bewerbung Ihr Interesse geweckt haben sollte, würde ich mich über eine Einladung zu einem persönlichen Gespräch freuen. Mit freundlichen Grüßen Maria Müller Anlagen: Lebenslauf, Zeugniskopien",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "bewerbung->bewerben, anlagen->anlegen, lebenslauf->lebenslang, maria->darin, zeugniskopien->None, einladung->einladen, müller->voller, interesse->None, gespräch->gesprächig"
+            }
+        },
+        {
+            "idx": 2252,
+            "marked_correct": 0,
+            "before_correction": "Mein mann hat gesagt: dass die Wohnung besser in der stadtmitte ist.",
+            "after__correction": "Mein Mann hat gesagt, dass sich die Wohnung besser im Stadtzentrum befindet.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "wohnung->wohnen, stadtzentrum->None, mann->kann"
+            }
+        },
+        {
+            "idx": 2268,
+            "marked_correct": 0,
+            "before_correction": "Frau EVA SCHMIDT BAHNHOFSTR, 8-12, 1234 STADT X LITAUEN AUPAIRSGLOBAL BAHNHOFSTR: 101, 65185 WIESBADEN 0611 / 9988776 STADT X, 14.05.2011",
+            "after__correction": "Frau Eva Schmidt Bahnhofstrasse 8–12, 1234 Stadt X Litauen Aupairglobal Bahnhofstraße 101, 65185 Wiesbaden 0611/9988776 Stadt X, 14.05.2011",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "frau->frag, wiesbaden->None, bahnhofstrasse->None, schmidt->scheint, bahnhofstraße->None, aupairglobal->None, eva->es, stadt->statt, x->i"
+            }
+        },
+        {
+            "idx": 2276,
+            "marked_correct": 0,
+            "before_correction": "Gibs in Eurere Statd solche Kurse??? - Muss ich 24 St am Tag mit Familie verbringen?",
+            "after__correction": "Gib es in Europa so viele solcher Kurse?? – Muss ich 24 Stunden am Tag mit der Familie zusammen sein?",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "Offset 39, length 2, Rule ID: DOPPELTES_AUSRUFEZEICHEN\nMessage: Die Verwendung von mehreren Frage- oder Ausrufezeichen wirkt oft übertrieben emphatisch.\nSuggestion: ?\nGib es in Europa so viele solcher Kurse?? – Muss ich 24 Stunden am Tag mit der Fa...\n                                       ^^",
+                "Spell checker": "familie->familiäre, europa->eutroph, stunden->standen, kurse->kurze, tag->mag"
+            }
+        },
+        {
+            "idx": 2281,
+            "marked_correct": 0,
+            "before_correction": "Ich hoffe gut vielen Dank für ein Breif.",
+            "after__correction": "Ich hoffe, es geht Ihnen gut und vielen Dank für eine kurze Nachricht.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "nachricht->nachreicht"
+            }
+        },
+        {
+            "idx": 2291,
+            "marked_correct": 0,
+            "before_correction": "Meine nächste Frage ist, ob ich eine Deutschsprahdiplom brauche, nachdem ich an einem Fremdsprachgymnasium intensiv Deutsch gelernt habe.",
+            "after__correction": "Meine nächste Frage ist, ob ich ein Deutschsprachdiplom benötige, nachdem ich an einem Fremdsprachgymnasium intensiv Deutsch gelernt habe.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "fremdsprachgymnasium->None, deutschsprachdiplom->None"
+            }
+        },
+        {
+            "idx": 2297,
+            "marked_correct": 0,
+            "before_correction": "Eineseits es ist interessant, in dieser Umgebung zu leben.",
+            "after__correction": "Es ist einseitig interessant, in dieser Umgebung zu leben.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "umgebung->umgeben"
+            }
+        },
+        {
+            "idx": 2302,
+            "marked_correct": 0,
+            "before_correction": "Ich denke, wir müssen respektieren die Traditione den Leute, welche da geboren und aufgewachsen sind.",
+            "after__correction": "Ich denke, dass wir die Tradition der Menschen, die dort geboren wurden und aufwuchsen, respektieren sollten.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "tradition->None, menschen->wünschen"
+            }
+        },
+        {
+            "idx": 2309,
+            "marked_correct": 0,
+            "before_correction": "Ich freue mich, dass du einen wundbar Urlaub in Istanbul machst.",
+            "after__correction": "Ich freue mich, dass du eine tolle Zeit in Istanbul verbringst.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "istanbul->None"
+            }
+        },
+        {
+            "idx": 2318,
+            "marked_correct": 0,
+            "before_correction": "Konnte ich am sontag um 15 Uhr treffen, Bitte ruf mich an.",
+            "after__correction": "Konnten wir uns am Sonntag um 15 Uhr treffen? Bitte rufen Sie mich an.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "uhr->ihr, sonntag->sonntags"
+            }
+        },
+        {
+            "idx": 2446,
+            "marked_correct": 0,
+            "before_correction": "Ich glaube, dass es gut und richtig ist, wenn man ihren Heimat lebt und kennt die Traditionen von ihren Volk.",
+            "after__correction": "Ich glaube, dass es gut und richtig ist, wenn man ihre Heimat kennt und deren Traditionen versteht.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "traditionen->traditionell, heimat->heimst"
+            }
+        },
+        {
+            "idx": 2478,
+            "marked_correct": 0,
+            "before_correction": "Ich brauche neu Wohnung suchen, ein oder zwei Zimmer Wohnung.",
+            "after__correction": "Ich benötige eine neue Wohnung zu suchen, eine oder zwei Raumwohnung.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "Offset 57, length 11, Rule ID: VIELZAHL_PLUS_SINGULAR\nMessage: Möglicher Tippfehler: Müsste dieses Wort im Plural stehen?\nSuggestion: Raumwohnungen\n... neue Wohnung zu suchen, eine oder zwei Raumwohnung.\n                                           ^^^^^^^^^^^",
+                "Spell checker": "wohnung->wohnen, raumwohnung->None"
+            }
+        },
+        {
+            "idx": 2497,
+            "marked_correct": 0,
+            "before_correction": "Ich habe zwei Tage Urlaub, deshalb kann ich uech besuchen.",
+            "after__correction": "Ich habe zwei Tage frei, daher kann ich dich besuchen.",
+            "feedback": {
+                "Punctuation seeker": "no errors found",
+                "Language tool": "no errors found",
+                "Spell checker": "no errors found"
+            }
+        }
+    ]
+}
