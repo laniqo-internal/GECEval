@@ -1,3 +1,5 @@
 pyspellchecker
 numpy
 language-tool-python
+fasttext
+huggingface-hub

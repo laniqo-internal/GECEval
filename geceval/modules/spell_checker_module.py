@@ -7,6 +7,8 @@ class SpellcheckerModule(GECModule):
     def __init__(self, language="en"):
         self.set_language(language)
         self.spellchecker = SpellChecker(language=self.language, case_sensitive=True)
+        self.supports_single_texts = True
+        self.supports_references = False
 
     def score(self, text: str) -> float:
         tokens = self.spellchecker.split_words(text)

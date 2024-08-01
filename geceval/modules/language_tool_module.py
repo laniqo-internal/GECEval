@@ -8,6 +8,8 @@ class LanguageToolModule(GECModule):
         self.language_map = {"en": "en-US", "de": "de", "it": "it", "sv": "sv"}
         self.set_language(language)
         self.lt = language_tool_python.LanguageTool(self.language_map[self.language])
+        self.supports_single_texts = True
+        self.supports_references = False
 
     def score(self, text: str) -> float:
         suggestions = len(self.lt.check(text))
