@@ -3,3 +3,5 @@ numpy
 language-tool-python
 fasttext
 huggingface-hub
+python-Levenshtein
+bert-score

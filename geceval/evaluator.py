@@ -7,11 +7,14 @@ from typing import Dict
 
 import numpy as np
 
-from geceval.modules.language_identification_module import \
-    LanguageIdentificationModule
+from geceval.modules.bertscore_module import BERTScoreModule
+from geceval.modules.jaccard_distance import JaccardDistanceModule
+from geceval.modules.language_identification_module import LanguageIdentificationModule
 from geceval.modules.language_tool_module import LanguageToolModule
+from geceval.modules.levenshtein_module import LevenshteinModule
 from geceval.modules.punctuation_seeker import PunctuationSeekerModule
 from geceval.modules.spell_checker_module import SpellcheckerModule
+from geceval.modules.token_count_distance import TokenCountDistanceModule
 
 logging.basicConfig(
     filename="log.output.txt",
@@ -34,6 +37,10 @@ class GECModules(Enum):
     EXPECTED_CORRECTIONS = 8
     PUNCTUATION_SEEKER = 9
     LANGUAGE_PRESERVATION = 10
+    LEVENSHTEIN = 11
+    TOKEN_COUNT_DISTANCE = 12
+    JACCARD = 13
+    BERTSCORE = 14
 
 
 class Evaluator:
@@ -44,7 +51,11 @@ class Evaluator:
             # GECModules.LANGUAGE_TOOL,
             # GECModules.PUNCTUATION_SEEKER,
             # GECModules.SPELLCHECKING,
-            GECModules.LANGUAGE_PRESERVATION
+            # GECModules.LANGUAGE_PRESERVATION,
+            # GECModules.LEVENSHTEIN,
+            # GECModules.TOKEN_COUNT_DISTANCE,
+            # GECModules.JACCARD,
+            GECModules.BERTSCORE
         }
 
         self.per_language_modules = {
@@ -87,6 +98,26 @@ class Evaluator:
                     GECModules.LANGUAGE_PRESERVATION
                 ] = LanguageIdentificationModule(language)
 
+            if GECModules.LEVENSHTEIN in self.per_language_modules[language]:
+                evaluators[language][GECModules.LEVENSHTEIN] = LevenshteinModule(
+                    language
+                )
+
+            if GECModules.TOKEN_COUNT_DISTANCE in self.per_language_modules[language]:
+                evaluators[language][
+                    GECModules.TOKEN_COUNT_DISTANCE
+                ] = TokenCountDistanceModule(language=language)
+
+            if GECModules.JACCARD in self.per_language_modules[language]:
+                evaluators[language][GECModules.JACCARD] = JaccardDistanceModule(
+                    language=language
+                )
+
+            if GECModules.BERTSCORE in self.per_language_modules[language]:
+                evaluators[language][GECModules.BERTSCORE] = BERTScoreModule(
+                    language=language
+                )
+
         return evaluators
 
     def collect_original_texts(self, lang_data):
@@ -128,8 +159,8 @@ class Evaluator:
         use_referenceless_metrics=True,
         use_metrics_with_references=True,
     ):
-        if use_referenceless_metrics:
-            self.evaluate_referenceless(data_path)
+        # if use_referenceless_metrics:
+        #   self.evaluate_referenceless(data_path)
 
         if use_metrics_with_references:
             self.evaluate_with_references(data_path)
@@ -218,9 +249,6 @@ class Evaluator:
 
     def evaluate_with_references(self, data_path: str):
         # BERTScore
-        # Levensthein
-        # klasyfikacja języka (czy jest stała czy się zmienia z czego na co)
-        # rónica w dlugosci tekstow (znaki, tokeny)
         # chcemy ranking, nie wyniki (!)
         #
         print("REFERENCES")
@@ -241,6 +269,8 @@ class Evaluator:
                 logger.log(logging.INFO, "-" * 80)
 
                 corrected_scores = {}
+
+                self.prompt_ids = [2]  #!!!!!
 
                 for prompt_id in self.prompt_ids:
                     for model_name in self.model_names:
