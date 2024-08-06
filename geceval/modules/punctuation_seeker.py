@@ -1,3 +1,5 @@
+from typing import List
+
 from geceval.modules.gec_module import GECModule
 
 
@@ -16,6 +18,9 @@ class PunctuationSeekerModule(GECModule):
         for mark in self.minor_punctuation_marks:
             if mark in text:
                 return 0.5
+        return 0.0
+
+    def score_pair(self, texts: List[str], references: List[str]):
         return 0.0
 
     def explain_errors(self, text: str):

@@ -1,3 +1,5 @@
+from typing import List
+
 from spellchecker import SpellChecker
 
 from geceval.modules.gec_module import GECModule
@@ -14,6 +16,9 @@ class SpellcheckerModule(GECModule):
         tokens = self.spellchecker.split_words(text)
         misspelled = self.spellchecker.unknown(tokens)
         return 1.0 / (1.0 + len(misspelled))
+
+    def score_pair(self, texts: List[str], references: List[str]):
+        return 0.0
 
     def explain_errors(self, text: str):
         tokens = self.spellchecker.split_words(text)

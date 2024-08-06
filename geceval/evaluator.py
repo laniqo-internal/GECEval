@@ -2,6 +2,7 @@ import argparse
 import json
 import logging
 import lzma
+from collections import defaultdict
 from enum import Enum
 from typing import Dict
 
@@ -9,7 +10,8 @@ import numpy as np
 
 from geceval.modules.bertscore_module import BERTScoreModule
 from geceval.modules.jaccard_distance import JaccardDistanceModule
-from geceval.modules.language_identification_module import LanguageIdentificationModule
+from geceval.modules.language_stability_module import LanguageStabilityModule
+from geceval.modules.language_switch_module import LanguageSwitchModule
 from geceval.modules.language_tool_module import LanguageToolModule
 from geceval.modules.levenshtein_module import LevenshteinModule
 from geceval.modules.punctuation_seeker import PunctuationSeekerModule
@@ -28,19 +30,21 @@ logger = logging.getLogger()
 
 class GECModules(Enum):
     LANGUAGE_TOOL = 1
-    PERPLEXITY = 2
-    ODDBALLNESS = 3
-    AFTER_HOURS = 4
-    CLASSIFIER = 5
-    COLA = 6
-    SPELLCHECKING = 7
-    EXPECTED_CORRECTIONS = 8
-    PUNCTUATION_SEEKER = 9
-    LANGUAGE_PRESERVATION = 10
-    LEVENSHTEIN = 11
-    TOKEN_COUNT_DISTANCE = 12
-    JACCARD = 13
-    BERTSCORE = 14
+    SPELLCHECKING = 2
+    PUNCTUATION_SEEKER = 3
+    BERTSCORE = 4
+    LANGUAGE_STABILITY = 5
+    LEVENSHTEIN = 6
+    JACCARD = 7
+    TOKEN_COUNT_DISTANCE = 8
+    LANGUAGE_SWITCH = 9
+    # EXPECTED_CORRECTIONS = 9
+    # PERPLEXITY = 10
+
+
+def log_screen_file(text):
+        print(text)
+        logger.log(logging.INFO, text)
 
 
 class Evaluator:
@@ -48,13 +52,14 @@ class Evaluator:
         self.supported_languages = ["en", "cs", "sv", "de", "it"]
 
         used_modules = {
-            # GECModules.LANGUAGE_TOOL,
-            # GECModules.PUNCTUATION_SEEKER,
-            # GECModules.SPELLCHECKING,
-            # GECModules.LANGUAGE_PRESERVATION,
-            # GECModules.LEVENSHTEIN,
-            # GECModules.TOKEN_COUNT_DISTANCE,
-            # GECModules.JACCARD,
+            GECModules.LANGUAGE_TOOL,
+            GECModules.PUNCTUATION_SEEKER,
+            GECModules.SPELLCHECKING,
+            GECModules.LANGUAGE_STABILITY,
+            GECModules.LANGUAGE_SWITCH,
+            GECModules.LEVENSHTEIN,
+            GECModules.TOKEN_COUNT_DISTANCE,
+            GECModules.JACCARD,
             GECModules.BERTSCORE
         }
 
@@ -62,6 +67,10 @@ class Evaluator:
             lang: used_modules for lang in self.supported_languages
         }
 
+        self._remove_unsupported_tools()
+        self.evaluators = self._construct_evaluators()
+
+    def _remove_unsupported_tools(self):
         if "cs" in self.supported_languages:
             self.per_language_modules["cs"] = self.per_language_modules["cs"] - {
                 GECModules.LANGUAGE_TOOL,
@@ -72,58 +81,35 @@ class Evaluator:
                 GECModules.SPELLCHECKING
             }
 
-        self.evaluators = self._construct_evaluators()
-
     def _construct_evaluators(self):
         evaluators = {}
+
+        construction_map = {
+            GECModules.SPELLCHECKING: SpellcheckerModule,
+            GECModules.LANGUAGE_TOOL: LanguageToolModule,
+            GECModules.PUNCTUATION_SEEKER: PunctuationSeekerModule,
+            GECModules.LANGUAGE_STABILITY: LanguageStabilityModule,
+            GECModules.LANGUAGE_SWITCH: LanguageSwitchModule,
+            GECModules.LEVENSHTEIN: LevenshteinModule,
+            GECModules.TOKEN_COUNT_DISTANCE: TokenCountDistanceModule,
+            GECModules.JACCARD: JaccardDistanceModule,
+            GECModules.BERTSCORE: BERTScoreModule
+        }
 
         for language in self.supported_languages:
             print(f"Constructing evaluators for {language}...")
             evaluators[language] = {}
 
-            if GECModules.SPELLCHECKING in self.per_language_modules[language]:
-                evaluators[language][GECModules.SPELLCHECKING] = SpellcheckerModule(
-                    language
-                )
-            if GECModules.LANGUAGE_TOOL in self.per_language_modules[language]:
-                evaluators[language][GECModules.LANGUAGE_TOOL] = LanguageToolModule(
-                    language
-                )
-            if GECModules.PUNCTUATION_SEEKER in self.per_language_modules[language]:
-                evaluators[language][
-                    GECModules.PUNCTUATION_SEEKER
-                ] = PunctuationSeekerModule(language)
-            if GECModules.LANGUAGE_PRESERVATION in self.per_language_modules[language]:
-                evaluators[language][
-                    GECModules.LANGUAGE_PRESERVATION
-                ] = LanguageIdentificationModule(language)
-
-            if GECModules.LEVENSHTEIN in self.per_language_modules[language]:
-                evaluators[language][GECModules.LEVENSHTEIN] = LevenshteinModule(
-                    language
-                )
-
-            if GECModules.TOKEN_COUNT_DISTANCE in self.per_language_modules[language]:
-                evaluators[language][
-                    GECModules.TOKEN_COUNT_DISTANCE
-                ] = TokenCountDistanceModule(language=language)
-
-            if GECModules.JACCARD in self.per_language_modules[language]:
-                evaluators[language][GECModules.JACCARD] = JaccardDistanceModule(
-                    language=language
-                )
-
-            if GECModules.BERTSCORE in self.per_language_modules[language]:
-                evaluators[language][GECModules.BERTSCORE] = BERTScoreModule(
-                    language=language
-                )
+            for module, constructor in construction_map.items():
+                if module in self.per_language_modules[language]:
+                    evaluators[language][module] = constructor(language)
 
         return evaluators
 
-    def collect_original_texts(self, lang_data):
+    def _collect_original_texts(self, lang_data):
         return [v["text"] for _, v in lang_data.items()]
 
-    def collect_corrected_texts(self, lang_data, prompt_id, model_name):
+    def _collect_corrected_texts(self, lang_data, prompt_id, model_name):
         result = []
 
         for _, entry in lang_data.items():
@@ -135,7 +121,7 @@ class Evaluator:
                     result.append(correction["content"])
         return result
 
-    def get_prompt_ids(self, data):
+    def _get_prompt_ids(self, data):
         prompt_ids = set()
 
         for _, lang_obj in data.items():
@@ -144,7 +130,7 @@ class Evaluator:
                     prompt_ids.add(correction["prompt_id"])
         return prompt_ids
 
-    def get_model_names(self, data):
+    def _get_model_names(self, data):
         model_names = set()
 
         for _, lang_obj in data.items():
@@ -152,18 +138,6 @@ class Evaluator:
                 for correction in entry["corrections"]:
                     model_names.add(correction["model_name"])
         return model_names
-
-    def evaluate(
-        self,
-        data_path: str,
-        use_referenceless_metrics=True,
-        use_metrics_with_references=True,
-    ):
-        # if use_referenceless_metrics:
-        #   self.evaluate_referenceless(data_path)
-
-        if use_metrics_with_references:
-            self.evaluate_with_references(data_path)
 
     def load_dataset(self, data_path: str) -> Dict:
         data = {}
@@ -173,155 +147,88 @@ class Evaluator:
             data = json.loads(utf_data)
         return data
 
-    def evaluate_referenceless(self, data_path: str):
-        data = self.load_dataset(data_path)
-        self.prompt_ids = self.get_prompt_ids(data)
-        self.model_names = self.get_model_names(data)
+    def _aggregate_prompts(self, corrected_scores, prompt_ids, model_names, language, module, original_avg_score, use_comparative_metrics):
+        for prompt_id in prompt_ids:
+            avg_prompt_score = np.mean(
+                [
+                    corrected_scores[prompt_id][model]
+                    for model in model_names
+                ]
+            )
 
-        for language in self.supported_languages:
-            original_texts = self.collect_original_texts(data[language])
+            log_text = ""
+            log_text += f"Aggregate over models Language: {language}"
+            log_text += f"\t prompt: {prompt_id}"
+            log_text += f"\t metric: {self.evaluators[language][module].get_name()}"
+            if not use_comparative_metrics:
+                log_text += f"\t score: {original_avg_score}->{avg_prompt_score}"
+            else:
+                log_text += f"\t score: {avg_prompt_score}"
 
-            for module in self.per_language_modules[language]:
-                if not self.evaluators[language][module].supports_single_texts:
-                    continue
+            log_screen_file(log_text)
 
-                original_ave = self.evaluators[language][module].get_average_score(
-                    original_texts
-                )
+    def _aggregate_models(self, corrected_scores, prompt_ids, model_names, language, module, original_avg_score, use_comparative_metrics):
+        for model_name in model_names:
+            avg_model_score = np.mean(
+                [
+                    corrected_scores[prompt_id][model_name]
+                    for prompt_id in prompt_ids
+                ]
+            )
 
-                print("")
-                print("-" * 80)
-                logger.log(logging.INFO, "")
-                logger.log(logging.INFO, "-" * 80)
+            log_text = ""
+            log_text += f"Aggregate over prompts Language: {language}"
+            log_text += f"\t model_name: {model_name}"
+            log_text += f"\t metric: {self.evaluators[language][module].get_name()}"
+            if not use_comparative_metrics:
+                log_text += f"\t score: {original_avg_score}->{avg_model_score}"
+            else:
+                log_text += f"\t score: {avg_model_score}"
+            log_screen_file(log_text)
 
-                corrected_scores = {}
+    def evaluate(self, json_path, use_comparative_metrics=False, prompt_ids = None, model_names = None, languages = None):
+        data = self.load_dataset(json_path)
 
-                for prompt_id in self.prompt_ids:
-                    for model_name in self.model_names:
-                        corrected_texts = self.collect_corrected_texts(
-                            data[language], prompt_id=prompt_id, model_name=model_name
-                        )
-                        corrected_ave = self.evaluators[language][
-                            module
-                        ].get_average_score(corrected_texts)
-                        if prompt_id not in corrected_scores:
-                            corrected_scores[prompt_id] = {}
-                        if model_name not in corrected_scores[prompt_id]:
-                            corrected_scores[prompt_id][model_name] = corrected_ave
+        if not prompt_ids:
+            prompt_ids = self._get_prompt_ids(data)
+        if not model_names:
+            model_names = self._get_model_names(data)
+        languages = languages if languages else self.supported_languages
 
-                        print(
-                            f"Language: {language}\t Model: {model_name}\t prompt: {prompt_id}\t metric: {self.evaluators[language][module].get_name()}\t score: {original_ave}->{corrected_ave}"
-                        )
-
-                        logger.log(
-                            logging.INFO,
-                            f"Language: {language}\t Model: {model_name}\t prompt: {prompt_id}\t metric: {self.evaluators[language][module].get_name()}\t score: {original_ave}->{corrected_ave}",
-                        )
-
-                for prompt_id in self.prompt_ids:
-                    ave_prompt = np.mean(
-                        [
-                            corrected_scores[prompt_id][model]
-                            for model in self.model_names
-                        ]
-                    )
-                    print(
-                        f"Aggregate over models Language: {language}\t prompt: {prompt_id}\t metric: {self.evaluators[language][module].get_name()}\t score: {original_ave}->{ave_prompt}"
-                    )
-                    logger.log(
-                        logging.INFO,
-                        f"Aggregate over models Language: {language}\t prompt: {prompt_id}\t metric: {self.evaluators[language][module].get_name()}\t score: {original_ave}->{ave_prompt}",
-                    )
-                for model_name in self.model_names:
-                    ave_model = np.mean(
-                        [
-                            corrected_scores[prompt_id][model_name]
-                            for prompt_id in self.prompt_ids
-                        ]
-                    )
-                    print(
-                        f"Aggregate over prompts Language: {language}\t model_name: {model_name}\t metric: {self.evaluators[language][module].get_name()}\t score: {original_ave}->{ave_model}"
-                    )
-                    logger.log(
-                        logging.INFO,
-                        f"Aggregate over prompts Language: {language}\t model_name: {model_name}\t metric: {self.evaluators[language][module].get_name()}\t score: {original_ave}->{ave_model}",
-                    )
-
-    def evaluate_with_references(self, data_path: str):
-        # BERTScore
-        # chcemy ranking, nie wyniki (!)
-        #
-        print("REFERENCES")
-        data = self.load_dataset(data_path)
-        self.prompt_ids = self.get_prompt_ids(data)
-        self.model_names = self.get_model_names(data)
-
-        for language in self.supported_languages:
-            original_texts = self.collect_original_texts(data[language])
+        for language in languages:
+            original_texts = self._collect_original_texts(data[language])
 
             for module in self.per_language_modules[language]:
-                if not self.evaluators[language][module].supports_references:
+                evaluator = self.evaluators[language][module]
+                if use_comparative_metrics and not evaluator.supports_references:
+                    continue
+                if not use_comparative_metrics and not evaluator.supports_single_texts:
                     continue
 
-                print("")
-                print("-" * 80)
-                logger.log(logging.INFO, "")
-                logger.log(logging.INFO, "-" * 80)
+                log_screen_file("\n" + "-" * 80)
 
-                corrected_scores = {}
+                if not use_comparative_metrics and evaluator.supports_single_texts:
+                    original_avg_score = evaluator.get_average_score(original_texts)
+                else:
+                    original_avg_score = 0.0
 
-                self.prompt_ids = [2]  #!!!!!
+                corrected_scores = defaultdict(dict)
 
-                for prompt_id in self.prompt_ids:
-                    for model_name in self.model_names:
-                        corrected_texts = self.collect_corrected_texts(
+                for prompt_id in prompt_ids:
+                    for model_name in model_names:
+                        corrected_texts = self._collect_corrected_texts(
                             data[language], prompt_id=prompt_id, model_name=model_name
                         )
-                        corrected_ave = self.evaluators[language][
-                            module
-                        ].get_average_pair_score(original_texts, corrected_texts)
-                        if prompt_id not in corrected_scores:
-                            corrected_scores[prompt_id] = {}
-                        if model_name not in corrected_scores[prompt_id]:
-                            corrected_scores[prompt_id][model_name] = corrected_ave
+                        if not use_comparative_metrics and evaluator.supports_single_texts:
+                            corrected_avg = evaluator.get_average_score(corrected_texts)
+                        else:
+                            corrected_avg = evaluator.get_average_pair_score(original_texts, corrected_texts)
 
-                        print(
-                            f"Language: {language}\t Model: {model_name}\t prompt: {prompt_id}\t metric: {self.evaluators[language][module].get_name()}\t score: {corrected_ave}"
-                        )
+                        corrected_scores[prompt_id][model_name] = corrected_avg
+                        log_screen_file(f"Language: {language}\t Model: {model_name}\t prompt: {prompt_id}\t metric: {self.evaluators[language][module].get_name()}\t score: {corrected_avg}")
+                self._aggregate_prompts(corrected_scores, prompt_ids, model_names, language, module, original_avg_score, use_comparative_metrics)
+                self._aggregate_models(corrected_scores, prompt_ids, model_names, language, module, original_avg_score, use_comparative_metrics)
 
-                        logger.log(
-                            logging.INFO,
-                            f"Language: {language}\t Model: {model_name}\t prompt: {prompt_id}\t metric: {self.evaluators[language][module].get_name()}\t score: {corrected_ave}",
-                        )
-
-                for prompt_id in self.prompt_ids:
-                    ave_prompt = np.mean(
-                        [
-                            corrected_scores[prompt_id][model]
-                            for model in self.model_names
-                        ]
-                    )
-                    print(
-                        f"Aggregate over models Language: {language}\t prompt: {prompt_id}\t metric: {self.evaluators[language][module].get_name()}\t score: {ave_prompt}"
-                    )
-                    logger.log(
-                        logging.INFO,
-                        f"Aggregate over models Language: {language}\t prompt: {prompt_id}\t metric: {self.evaluators[language][module].get_name()}\t score: {ave_prompt}",
-                    )
-                for model_name in self.model_names:
-                    ave_model = np.mean(
-                        [
-                            corrected_scores[prompt_id][model_name]
-                            for prompt_id in self.prompt_ids
-                        ]
-                    )
-                    print(
-                        f"Aggregate over prompts Language: {language}\t model_name: {model_name}\t metric: {self.evaluators[language][module].get_name()}\t score: {ave_model}"
-                    )
-                    logger.log(
-                        logging.INFO,
-                        f"Aggregate over prompts Language: {language}\t model_name: {model_name}\t metric: {self.evaluators[language][module].get_name()}\t score: {ave_model}",
-                    )
 
     def close(self):
         for language in self.supported_languages:
@@ -342,6 +249,5 @@ if __name__ == "__main__":
     experiment_path = args.experiment_output_path
 
     evaluator = Evaluator()
-    # evaluator.check_test_set(args.test_path, use_triton=args.use_triton_data)
-    evaluator.evaluate(experiment_path)
+    evaluator.evaluate(experiment_path, use_comparative_metrics=False, prompt_ids=[2])
     evaluator.close()

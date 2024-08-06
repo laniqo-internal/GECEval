@@ -1,8 +1,12 @@
+import nltk
+from nltk.tokenize import word_tokenize
+
 from geceval.modules.gec_module import GECModule
 
 
 class JaccardDistanceModule(GECModule):
     def __init__(self, language="en"):
+        nltk.download('punkt')
         self.language = language
         self.supports_single_texts = False
         self.supports_references = True
@@ -11,8 +15,8 @@ class JaccardDistanceModule(GECModule):
         pass
 
     def score_pair(self, text: str, reference: str):
-        text_tokens = set(text.lower().split())
-        reference_tokens = set(reference.lower().split())
+        text_tokens = set(word_tokenize(text))
+        reference_tokens = set(word_tokenize(reference))
 
         return (
             1.0

@@ -1,3 +1,5 @@
+from typing import List
+
 import language_tool_python
 
 from geceval.modules.gec_module import GECModule
@@ -14,6 +16,9 @@ class LanguageToolModule(GECModule):
     def score(self, text: str) -> float:
         suggestions = len(self.lt.check(text))
         return 1.0 / (1.0 + suggestions)
+
+    def score_pair(self, texts: List[str], references: List[str]):
+        return 0.0
 
     def explain_errors(self, text: str):
         suggestions = self.lt.check(text)

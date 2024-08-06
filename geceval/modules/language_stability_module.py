@@ -7,7 +7,7 @@ from huggingface_hub import hf_hub_download
 from geceval.modules.gec_module import GECModule
 
 
-class LanguageIdentificationModule(GECModule):
+class LanguageStabilityModule(GECModule):
     def __init__(self, language="en"):
         self.language = language
         self.label_to_lang = {
@@ -24,7 +24,7 @@ class LanguageIdentificationModule(GECModule):
             repo_id="facebook/fasttext-language-identification", filename="model.bin"
         )
         self.model = fasttext.load_model(self.model_path)
-        self.supports_single_texts = True
+        self.supports_single_texts = False
         self.supports_references = True
 
     def score(self, text: str) -> float:
@@ -44,15 +44,15 @@ class LanguageIdentificationModule(GECModule):
         text_score = self.score(text)
         reference_score = self.score(reference)
 
+        #return reference_score - text_score
+
         return 1 - math.fabs(text_score - reference_score)
 
     def explain_errors(self, text: str):
-        suggestions = self.lt.check(text)
-        label = True if len(suggestions) > 0 else False
-        return label, ", ".join([str(x) for x in suggestions])
+        return False, ""
 
     def close(self):
         pass
 
     def get_name(self):
-        return "Language identification"
+        return "Language stability assessment"

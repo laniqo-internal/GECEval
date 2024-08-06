@@ -5,3 +5,4 @@ fasttext
 huggingface-hub
 python-Levenshtein
 bert-score
+nltk
