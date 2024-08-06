@@ -43,8 +43,8 @@ class GECModules(Enum):
 
 
 def log_screen_file(text):
-        print(text)
-        logger.log(logging.INFO, text)
+    print(text)
+    logger.log(logging.INFO, text)
 
 
 class Evaluator:
@@ -60,7 +60,7 @@ class Evaluator:
             GECModules.LEVENSHTEIN,
             GECModules.TOKEN_COUNT_DISTANCE,
             GECModules.JACCARD,
-            GECModules.BERTSCORE
+            GECModules.BERTSCORE,
         }
 
         self.per_language_modules = {
@@ -93,7 +93,7 @@ class Evaluator:
             GECModules.LEVENSHTEIN: LevenshteinModule,
             GECModules.TOKEN_COUNT_DISTANCE: TokenCountDistanceModule,
             GECModules.JACCARD: JaccardDistanceModule,
-            GECModules.BERTSCORE: BERTScoreModule
+            GECModules.BERTSCORE: BERTScoreModule,
         }
 
         for language in self.supported_languages:
@@ -147,13 +147,19 @@ class Evaluator:
             data = json.loads(utf_data)
         return data
 
-    def _aggregate_prompts(self, corrected_scores, prompt_ids, model_names, language, module, original_avg_score, use_comparative_metrics):
+    def _aggregate_prompts(
+        self,
+        corrected_scores,
+        prompt_ids,
+        model_names,
+        language,
+        module,
+        original_avg_score,
+        use_comparative_metrics,
+    ):
         for prompt_id in prompt_ids:
             avg_prompt_score = np.mean(
-                [
-                    corrected_scores[prompt_id][model]
-                    for model in model_names
-                ]
+                [corrected_scores[prompt_id][model] for model in model_names]
             )
 
             log_text = ""
@@ -167,13 +173,19 @@ class Evaluator:
 
             log_screen_file(log_text)
 
-    def _aggregate_models(self, corrected_scores, prompt_ids, model_names, language, module, original_avg_score, use_comparative_metrics):
+    def _aggregate_models(
+        self,
+        corrected_scores,
+        prompt_ids,
+        model_names,
+        language,
+        module,
+        original_avg_score,
+        use_comparative_metrics,
+    ):
         for model_name in model_names:
             avg_model_score = np.mean(
-                [
-                    corrected_scores[prompt_id][model_name]
-                    for prompt_id in prompt_ids
-                ]
+                [corrected_scores[prompt_id][model_name] for prompt_id in prompt_ids]
             )
 
             log_text = ""
@@ -186,7 +198,14 @@ class Evaluator:
                 log_text += f"\t score: {avg_model_score}"
             log_screen_file(log_text)
 
-    def evaluate(self, json_path, use_comparative_metrics=False, prompt_ids = None, model_names = None, languages = None):
+    def evaluate(
+        self,
+        json_path,
+        use_comparative_metrics=False,
+        prompt_ids=None,
+        model_names=None,
+        languages=None,
+    ):
         data = self.load_dataset(json_path)
 
         if not prompt_ids:
@@ -219,16 +238,38 @@ class Evaluator:
                         corrected_texts = self._collect_corrected_texts(
                             data[language], prompt_id=prompt_id, model_name=model_name
                         )
-                        if not use_comparative_metrics and evaluator.supports_single_texts:
+                        if (
+                            not use_comparative_metrics
+                            and evaluator.supports_single_texts
+                        ):
                             corrected_avg = evaluator.get_average_score(corrected_texts)
                         else:
-                            corrected_avg = evaluator.get_average_pair_score(original_texts, corrected_texts)
+                            corrected_avg = evaluator.get_average_pair_score(
+                                original_texts, corrected_texts
+                            )
 
                         corrected_scores[prompt_id][model_name] = corrected_avg
-                        log_screen_file(f"Language: {language}\t Model: {model_name}\t prompt: {prompt_id}\t metric: {self.evaluators[language][module].get_name()}\t score: {corrected_avg}")
-                self._aggregate_prompts(corrected_scores, prompt_ids, model_names, language, module, original_avg_score, use_comparative_metrics)
-                self._aggregate_models(corrected_scores, prompt_ids, model_names, language, module, original_avg_score, use_comparative_metrics)
-
+                        log_screen_file(
+                            f"Language: {language}\t Model: {model_name}\t prompt: {prompt_id}\t metric: {self.evaluators[language][module].get_name()}\t score: {corrected_avg}"
+                        )
+                self._aggregate_prompts(
+                    corrected_scores,
+                    prompt_ids,
+                    model_names,
+                    language,
+                    module,
+                    original_avg_score,
+                    use_comparative_metrics,
+                )
+                self._aggregate_models(
+                    corrected_scores,
+                    prompt_ids,
+                    model_names,
+                    language,
+                    module,
+                    original_avg_score,
+                    use_comparative_metrics,
+                )
 
     def close(self):
         for language in self.supported_languages:

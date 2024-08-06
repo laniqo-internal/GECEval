@@ -45,7 +45,7 @@ class LanguageSwitchModule(GECModule):
 
         return reference_score - text_score
 
-        #return 1 - math.fabs(text_score - reference_score)
+        # return 1 - math.fabs(text_score - reference_score)
 
     def explain_errors(self, text: str):
         return False, ""

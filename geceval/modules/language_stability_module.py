@@ -44,7 +44,7 @@ class LanguageStabilityModule(GECModule):
         text_score = self.score(text)
         reference_score = self.score(reference)
 
-        #return reference_score - text_score
+        # return reference_score - text_score
 
         return 1 - math.fabs(text_score - reference_score)
 

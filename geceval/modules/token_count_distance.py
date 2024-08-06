@@ -11,7 +11,7 @@ class TokenCountDistanceModule(GECModule):
         self.language = language
         self.supports_single_texts = False
         self.supports_references = True
-        nltk.download('punkt')
+        nltk.download("punkt")
 
     def score(self, text: str) -> float:
         pass

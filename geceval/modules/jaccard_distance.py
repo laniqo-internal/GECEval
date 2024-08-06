@@ -6,7 +6,7 @@ from geceval.modules.gec_module import GECModule
 
 class JaccardDistanceModule(GECModule):
     def __init__(self, language="en"):
-        nltk.download('punkt')
+        nltk.download("punkt")
         self.language = language
         self.supports_single_texts = False
         self.supports_references = True
