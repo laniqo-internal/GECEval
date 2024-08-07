@@ -1,8 +1,8 @@
 import argparse
 import json
+import time
 
 import torch
-from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 PROMPTS_SET = [
@@ -105,7 +105,8 @@ def process_all_prompts(data, device, model, model_id, tokenizer, iteration):
                 outputs[language] = []
 
             print(f"Processing language: {language}", flush=True)
-            for batch in tqdm(batchify(data[language], only_texts=True)):
+            for batch in batchify(data[language], only_texts=True):
+                start_time = time.time()
                 batch_id += 1
 
                 processed_texts = process_batch(prompt_idx, batch, language, model, tokenizer, device)
@@ -114,6 +115,7 @@ def process_all_prompts(data, device, model, model_id, tokenizer, iteration):
                     e['processed'] = text
                     outputs[language].append(e)
                     idx += 1
+                print(f"Batch {batch_id} processed in {time.time() - start_time:.2f} seconds", flush=True)
 
         with open(f'{model_id}_output_prompt_{prompt_idx}_{iteration}.json', 'w') as f:
             f.write(json.dumps(outputs, ensure_ascii=False, indent=4))
