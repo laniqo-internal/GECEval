@@ -103,9 +103,8 @@ def process_all_prompts(data, device, model, model_id, tokenizer, iteration):
             if language not in outputs:
                 outputs[language] = []
 
-            for batch in list(batchify(data[language], only_texts=True)):
+            for batch in batchify(data[language], only_texts=True):
                 print(f"{language}: processing batch: {batch_id}")
-                print(f"batch consist: {batch[0]}")
                 batch_id += 1
 
                 processed_texts = process_batch(prompt_idx, batch, language, model, tokenizer, device)
@@ -114,7 +113,6 @@ def process_all_prompts(data, device, model, model_id, tokenizer, iteration):
                     e['processed'] = text
                     outputs[language].append(e)
                     idx += 1
-                break
 
         with open(f'{model_id}_output_prompt_{prompt_idx}_{iteration}.json', 'w') as f:
             f.write(json.dumps(outputs, ensure_ascii=False, indent=4))
