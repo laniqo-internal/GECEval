@@ -104,8 +104,8 @@ def process_all_prompts(data, device, model, model_id, tokenizer, iteration):
             if language not in outputs:
                 outputs[language] = []
 
+            print(f"Processing language: {language}", flush=True)
             for batch in tqdm(batchify(data[language], only_texts=True)):
-                print(f"{language}: processing batch: {batch_id}", flush=True)
                 batch_id += 1
 
                 processed_texts = process_batch(prompt_idx, batch, language, model, tokenizer, device)
