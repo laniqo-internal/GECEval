@@ -102,6 +102,7 @@ def process_all_prompts(data, device, model, model_id, tokenizer, iteration):
 
             for batch in list(batchify(data[language], only_texts=True))[-1::]:
                 print(f"{language}: processing batch: {batch_id}")
+                print(f"batch consist: {batch[0]}")
                 batch_id += 1
 
                 processed_texts = process_batch(prompt_idx, batch, language, model, tokenizer, device)
