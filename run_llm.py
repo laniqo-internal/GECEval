@@ -2,6 +2,7 @@ import argparse
 import json
 
 import torch
+from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 PROMPTS_SET = [
@@ -102,7 +103,7 @@ def process_all_prompts(data, device, model, model_id, tokenizer, iteration):
             if language not in outputs:
                 outputs[language] = []
 
-            for batch in batchify(data[language], only_texts=True):
+            for batch in tqdm(batchify(data[language], only_texts=True)):
                 print(f"{language}: processing batch: {batch_id}", flush=True)
                 batch_id += 1
 
