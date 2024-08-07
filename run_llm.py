@@ -35,7 +35,6 @@ MODELS = {
     "openchat36": "openchat/openchat-3.6-8b-20240522",
     "tower7B": "Unbabel/TowerInstruct-7B-v0.2",
     "tower13B": "Unbabel/TowerInstruct-13B-v0.1",
-    "gpt_small": "microsoft/DialoGPT-small",
 }
 
 
