@@ -92,7 +92,7 @@ def process_batch(prompt_idx, batch, language, model, tokenizer, device):
 
 def process_all_prompts(data, device, model, model_id, tokenizer, iteration):
     for prompt_idx in range(len(PROMPTS_SET)):
-        print("Processing prompt:", prompt_idx)
+        print("Processing prompt:", prompt_idx, flush=True)
 
         outputs = {}
 
@@ -103,7 +103,7 @@ def process_all_prompts(data, device, model, model_id, tokenizer, iteration):
                 outputs[language] = []
 
             for batch in batchify(data[language], only_texts=True):
-                print(f"{language}: processing batch: {batch_id}")
+                print(f"{language}: processing batch: {batch_id}", flush=True)
                 batch_id += 1
 
                 processed_texts = process_batch(prompt_idx, batch, language, model, tokenizer, device)
@@ -128,12 +128,12 @@ def process_all_models(models, device, iterations):
         tokenizer.pad_token = tokenizer.eos_token
         model = AutoModelForCausalLM.from_pretrained(name, torch_dtype=torch.float16, trust_remote_code=True).to(device)
 
-        print(f"Start processing model {model_id}: {name}")
+        print(f"Start processing model {model_id}: {name}", flush=True)
         for iteration in range(iterations):
-            print(f"Iteration: {iteration + 1}/{iterations}")
+            print(f"Iteration: {iteration + 1}/{iterations}", flush=True)
             process_all_prompts(data, device, model, model_id, tokenizer, iteration)
-            print("-" * 50)
-        print(f"Done processing model {model_id}: {name}")
+            print("-" * 50, flush=True)
+        print(f"Done processing model {model_id}: {name}", flush=True)
         if device == "cuda":
             del model, tokenizer
             torch.cuda.empty_cache()
