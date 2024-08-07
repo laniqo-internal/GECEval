@@ -85,7 +85,8 @@ def process_batch(prompt_idx, batch, language, model, tokenizer, device):
         repetition_penalty=1.18,
         top_k=40,
         top_p=0.1,
-        # temperature=0.7
+        # temperature=0.7,
+        pad_token_id=tokenizer.eos_token_id,
     )
     output = tokenizer.batch_decode([o[prompt_length:] for o in model_op], skip_special_tokens=True)
     return output
