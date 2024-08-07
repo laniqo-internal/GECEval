@@ -72,9 +72,11 @@ def process_batch(prompt_idx, batch, language, model, tokenizer, device):
     tokenized_texts = tokenizer(filled_templates, return_tensors='pt', padding=True)
     prompt_length = tokenized_texts['input_ids'].shape[1]
 
+    input_ids = tokenized_texts['input_ids'].to(device)
+    attention_mask = tokenized_texts['attention_mask'].to(device)
     model_op = model.generate(
-        input_ids=tokenized_texts['input_ids'].to(device),
-        attention_mask=tokenized_texts['attention_mask'].to(device),
+        input_ids=input_ids,
+        attention_mask=attention_mask,
         renormalize_logits=False, do_sample=True,
         use_cache=True, max_new_tokens=256,
         repetition_penalty=1.18,
@@ -83,6 +85,7 @@ def process_batch(prompt_idx, batch, language, model, tokenizer, device):
         # temperature=0.7
     )
     output = tokenizer.batch_decode([o[prompt_length:] for o in model_op], skip_special_tokens=True)
+    del input_ids, attention_mask, model_op
     return output
 
 
