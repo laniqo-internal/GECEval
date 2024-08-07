@@ -35,6 +35,7 @@ MODELS = {
     "openchat36": "openchat/openchat-3.6-8b-20240522",
     "tower7B": "Unbabel/TowerInstruct-7B-v0.2",
     "tower13B": "Unbabel/TowerInstruct-13B-v0.1",
+    "gpt_small": "microsoft/DialoGPT-small",
 }
 
 
@@ -77,8 +78,10 @@ def process_batch(prompt_idx, batch, language, model, tokenizer, device):
     model_op = model.generate(
         input_ids=input_ids,
         attention_mask=attention_mask,
-        renormalize_logits=False, do_sample=True,
-        use_cache=True, max_new_tokens=256,
+        renormalize_logits=False,
+        do_sample=True,
+        use_cache=True,
+        max_new_tokens=256,
         repetition_penalty=1.18,
         top_k=40,
         top_p=0.1,
@@ -100,7 +103,7 @@ def process_all_prompts(data, device, model, model_id, tokenizer, iteration):
             if language not in outputs:
                 outputs[language] = []
 
-            for batch in list(batchify(data[language], only_texts=True))[-1::]:
+            for batch in list(batchify(data[language], only_texts=True)):
                 print(f"{language}: processing batch: {batch_id}")
                 print(f"batch consist: {batch[0]}")
                 batch_id += 1
@@ -111,6 +114,7 @@ def process_all_prompts(data, device, model, model_id, tokenizer, iteration):
                     e['processed'] = text
                     outputs[language].append(e)
                     idx += 1
+                break
 
         with open(f'{model_id}_output_prompt_{prompt_idx}_{iteration}.json', 'w') as f:
             f.write(json.dumps(outputs, ensure_ascii=False, indent=4))
