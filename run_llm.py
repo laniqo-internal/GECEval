@@ -51,7 +51,7 @@ def prepare_prompts(prompt_idx, batch, language, tokenizer):
     return [prepare_prompt(prompt_idx, elem, language, tokenizer) for elem in batch]
 
 
-def batchify(all_texts, batch_size=64, only_texts=False):
+def batchify(all_texts, batch_size=32, only_texts=False):
     if not only_texts:
         data = all_texts
     else:
@@ -85,7 +85,6 @@ def process_batch(prompt_idx, batch, language, model, tokenizer, device):
         # temperature=0.7
     )
     output = tokenizer.batch_decode([o[prompt_length:] for o in model_op], skip_special_tokens=True)
-    del input_ids, attention_mask, model_op
     return output
 
 
@@ -101,7 +100,7 @@ def process_all_prompts(data, device, model, model_id, tokenizer, iteration):
             if language not in outputs:
                 outputs[language] = []
 
-            for batch in batchify(data[language], only_texts=True):
+            for batch in list(batchify(data[language], only_texts=True))[-1::]:
                 print(f"{language}: processing batch: {batch_id}")
                 batch_id += 1
 
@@ -122,8 +121,6 @@ def process_all_models(models, device, iterations):
     data = sort_data_lengths(data)
 
     for model_id, name in models.items():
-        if device == 'cuda':
-            torch.cuda.empty_cache()
         tokenizer = AutoTokenizer.from_pretrained(name)
         tokenizer.padding_side = 'left'
         tokenizer.pad_token = tokenizer.eos_token
@@ -135,6 +132,9 @@ def process_all_models(models, device, iterations):
             process_all_prompts(data, device, model, model_id, tokenizer, iteration)
             print("-" * 50)
         print(f"Done processing model {model_id}: {name}")
+        if device == "cuda":
+            del model, tokenizer
+            torch.cuda.empty_cache()
 
 
 def get_args() -> argparse.Namespace:
