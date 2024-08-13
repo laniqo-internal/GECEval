@@ -68,6 +68,10 @@ def dump_data(data):
         json.dump(data, file, indent=4)
 
 
+def anything_to_process(data: dict, language: str) -> bool:
+    return any("quillbot_errors" not in d for d in data[language])
+
+
 def process_language(data: dict, language: str, save_interval: int):
     quillbot_scraper = QuillbotScraper(lang=language)
     count, to_processed = 0, sum([1 for d in data[language] if "quillbot_errors" not in d])
@@ -96,7 +100,12 @@ def main() -> None:
         if lang not in data:
             print(f"Selected language {lang} not found in data!")
         else:
-            process_language(data, lang, args.save_interval)
+            while anything_to_process(data, lang):
+                try:
+                    process_language(data, lang, args.save_interval)
+                except Exception as e:
+                    print(f"Error processing language {lang}: {e}")
+                    continue
 
 
 if __name__ == '__main__':
