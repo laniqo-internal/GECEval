@@ -8,13 +8,12 @@ class SentenceBertModule(GECModule):
     def __init__(
             self,
             language: str,
-            model_name: str = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
-            device: str = 'cuda'):
+            model_name: str = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"):
         self.supports_single_texts = False
         self.supports_references = True
         self.language = language
-        self.device = device
-        self.model = SentenceTransformer(model_name, device=device)
+        self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
+        self.model = SentenceTransformer(model_name, device=self.device)
 
     def score(self, text: str) -> float:
         pass
