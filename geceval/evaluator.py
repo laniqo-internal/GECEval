@@ -17,6 +17,7 @@ from geceval.modules.levenshtein_module import LevenshteinModule
 from geceval.modules.punctuation_seeker import PunctuationSeekerModule
 from geceval.modules.spell_checker_module import SpellcheckerModule
 from geceval.modules.token_count_distance import TokenCountDistanceModule
+from geceval.modules.sentence_bert_module import SentenceBertModule
 
 logging.basicConfig(
     filename="log.output.txt",
@@ -38,6 +39,7 @@ class GECModules(Enum):
     JACCARD = 7
     TOKEN_COUNT_DISTANCE = 8
     LANGUAGE_SWITCH = 9
+    SENTENCE_BERT = 10
     # EXPECTED_CORRECTIONS = 9
     # PERPLEXITY = 10
 
@@ -61,6 +63,7 @@ class Evaluator:
             # GECModules.TOKEN_COUNT_DISTANCE,
             # GECModules.JACCARD,
             # GECModules.BERTSCORE,
+            # GECModules.SENTENCE_BERT
         }
 
         self.per_language_modules = {
@@ -94,6 +97,7 @@ class Evaluator:
             GECModules.TOKEN_COUNT_DISTANCE: TokenCountDistanceModule,
             GECModules.JACCARD: JaccardDistanceModule,
             GECModules.BERTSCORE: BERTScoreModule,
+            GECModules.SENTENCE_BERT: SentenceBertModule,
         }
 
         for language in self.supported_languages:
