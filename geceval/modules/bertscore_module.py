@@ -4,10 +4,10 @@ from geceval.modules.gec_module import GECModule
 
 
 class BERTScoreModule(GECModule):
-    def __init__(self, language="en", multilingual_model_for_en=False):
+    def __init__(self, language="en", multilingual_model_for_en=True):
         self.language = language
 
-        if language == "en" and multilingual_model_for_en:
+        if language == "en" and not multilingual_model_for_en:
             self.scorer = BERTScorer(model_type="bert-base-uncased")
         else:
             self.scorer = BERTScorer(model_type="bert-base-multilingual-cased")
@@ -20,7 +20,7 @@ class BERTScoreModule(GECModule):
 
     def score_pair(self, text: str, reference: str):
         _, _, f1 = self.scorer.score([text], [reference])
-        return f1
+        return f1.item()
 
     def explain_errors(self, text: str):
         pass

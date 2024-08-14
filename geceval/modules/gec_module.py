@@ -22,7 +22,7 @@ class GECModule(ABC):
     def get_average_score(self, texts: List[str]):
         """Score a given set of texts based on a given GEC metric"""
         scores = [self.score(text) for text in texts]
-        return np.mean(scores)
+        return np.mean(scores), scores
 
     def get_average_pair_score(self, texts: List[str], references: List[str]):
         """Score a given set of texts based on a given GEC metric"""
@@ -30,7 +30,7 @@ class GECModule(ABC):
             self.score_pair(text, reference)
             for text, reference in zip(texts, references)
         ]
-        return np.mean(scores)
+        return np.mean(scores), scores
 
     def close(self):
         pass

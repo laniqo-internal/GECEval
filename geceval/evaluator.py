@@ -52,15 +52,15 @@ class Evaluator:
         self.supported_languages = ["en", "cs", "sv", "de", "it"]
 
         used_modules = {
-            GECModules.LANGUAGE_TOOL,
-            GECModules.PUNCTUATION_SEEKER,
-            GECModules.SPELLCHECKING,
-            GECModules.LANGUAGE_STABILITY,
-            GECModules.LANGUAGE_SWITCH,
+            # GECModules.LANGUAGE_TOOL,
+            # GECModules.PUNCTUATION_SEEKER,
+            # GECModules.SPELLCHECKING,
+            # GECModules.LANGUAGE_STABILITY,
+            # GECModules.LANGUAGE_SWITCH,
             GECModules.LEVENSHTEIN,
-            GECModules.TOKEN_COUNT_DISTANCE,
-            GECModules.JACCARD,
-            GECModules.BERTSCORE,
+            # GECModules.TOKEN_COUNT_DISTANCE,
+            # GECModules.JACCARD,
+            # GECModules.BERTSCORE,
         }
 
         self.per_language_modules = {
@@ -198,6 +198,13 @@ class Evaluator:
                 log_text += f"\t score: {avg_model_score}"
             log_screen_file(log_text)
 
+    def _requirements_check_failed(self, use_comparative_metrics, evaluator):
+        if use_comparative_metrics and not evaluator.supports_references:
+            return True
+        if not use_comparative_metrics and not evaluator.supports_single_texts:
+            return True
+        return False
+
     def evaluate(
         self,
         json_path,
@@ -219,9 +226,8 @@ class Evaluator:
 
             for module in self.per_language_modules[language]:
                 evaluator = self.evaluators[language][module]
-                if use_comparative_metrics and not evaluator.supports_references:
-                    continue
-                if not use_comparative_metrics and not evaluator.supports_single_texts:
+
+                if self._requirements_check_failed(use_comparative_metrics, evaluator):
                     continue
 
                 log_screen_file("\n" + "-" * 80)
@@ -242,9 +248,11 @@ class Evaluator:
                             not use_comparative_metrics
                             and evaluator.supports_single_texts
                         ):
-                            corrected_avg = evaluator.get_average_score(corrected_texts)
+                            corrected_avg, scores = evaluator.get_average_score(
+                                corrected_texts
+                            )
                         else:
-                            corrected_avg = evaluator.get_average_pair_score(
+                            corrected_avg, scores = evaluator.get_average_pair_score(
                                 original_texts, corrected_texts
                             )
 
@@ -290,5 +298,18 @@ if __name__ == "__main__":
     experiment_path = args.experiment_output_path
 
     evaluator = Evaluator()
-    evaluator.evaluate(experiment_path, use_comparative_metrics=False, prompt_ids=[2])
+    evaluator.evaluate(
+        experiment_path,
+        use_comparative_metrics=True,
+        prompt_ids=[2],
+        languages=["it"],
+        model_names=[
+            "gemma2B",
+            "tower7B1",
+            "tower7B2",
+            "tower7B3",
+            "tower7B4",
+            "tower7B5",
+        ],
+    )
     evaluator.close()
