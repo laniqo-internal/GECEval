@@ -21,6 +21,7 @@ class QuillbotScraper:
             raise ValueError(f"Language {lang} not supported by Quillbot")
         self.url = url
         self._create_driver()
+        self._close_cookies()
         self._select_language(lang)
         self.text_area = self._find_text_area()
 
@@ -28,6 +29,12 @@ class QuillbotScraper:
         self.driver = webdriver.Chrome()
         self.driver.get(self.url)
         time.sleep(3)
+
+    def _close_cookies(self):
+        button = self.driver.find_element(
+            By.XPATH, f'//button[contains(text(), "Decline All")]')
+        button.click()
+        time.sleep(1)
 
     def _select_language(self, lang: str):
         button = self.driver.find_element(
