@@ -9,15 +9,16 @@ from typing import Dict
 import numpy as np
 
 from geceval.modules.bertscore_module import BERTScoreModule
+from geceval.modules.bleurt_module import BleuRTModule
 from geceval.modules.jaccard_distance import JaccardDistanceModule
 from geceval.modules.language_stability_module import LanguageStabilityModule
 from geceval.modules.language_switch_module import LanguageSwitchModule
 from geceval.modules.language_tool_module import LanguageToolModule
 from geceval.modules.levenshtein_module import LevenshteinModule
 from geceval.modules.punctuation_seeker import PunctuationSeekerModule
+from geceval.modules.sentence_bert_module import SentenceBertModule
 from geceval.modules.spell_checker_module import SpellcheckerModule
 from geceval.modules.token_count_distance import TokenCountDistanceModule
-from geceval.modules.sentence_bert_module import SentenceBertModule
 
 logging.basicConfig(
     filename="log.output.txt",
@@ -40,8 +41,7 @@ class GECModules(Enum):
     TOKEN_COUNT_DISTANCE = 8
     LANGUAGE_SWITCH = 9
     SENTENCE_BERT = 10
-    # EXPECTED_CORRECTIONS = 9
-    # PERPLEXITY = 10
+    BLEURT = 11
 
 
 def log_screen_file(text):
@@ -59,11 +59,12 @@ class Evaluator:
             # GECModules.SPELLCHECKING,
             # GECModules.LANGUAGE_STABILITY,
             # GECModules.LANGUAGE_SWITCH,
-            GECModules.LEVENSHTEIN,
+            # GECModules.LEVENSHTEIN,
             # GECModules.TOKEN_COUNT_DISTANCE,
             # GECModules.JACCARD,
             # GECModules.BERTSCORE,
             # GECModules.SENTENCE_BERT
+            GECModules.BLEURT
         }
 
         self.per_language_modules = {
@@ -98,6 +99,7 @@ class Evaluator:
             GECModules.JACCARD: JaccardDistanceModule,
             GECModules.BERTSCORE: BERTScoreModule,
             GECModules.SENTENCE_BERT: SentenceBertModule,
+            GECModules.BLEURT: BleuRTModule,
         }
 
         for language in self.supported_languages:
@@ -306,14 +308,14 @@ if __name__ == "__main__":
         experiment_path,
         use_comparative_metrics=True,
         prompt_ids=[2],
-        languages=["it"],
-        model_names=[
-            "gemma2B",
-            "tower7B1",
-            "tower7B2",
-            "tower7B3",
-            "tower7B4",
-            "tower7B5",
-        ],
+        # languages=["it"],
+        # model_names=[
+        #    "gemma2B",
+        #    "tower7B1",
+        #    "tower7B2",
+        #    "tower7B3",
+        #    "tower7B4",
+        #    "tower7B5",
+        # ],
     )
     evaluator.close()
