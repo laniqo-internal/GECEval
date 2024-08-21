@@ -37,8 +37,10 @@ class QuillbotScraper:
         time.sleep(1)
 
     def _select_language(self, lang: str):
-        button = self.driver.find_element(
-            By.XPATH, f'//button[contains(text(), "All")]')
+        button = [x for x in self.driver.find_elements(
+            By.XPATH, f'//*[contains(text(), "All")]') if x.is_displayed()][0]
+        # button = self.driver.find_element(
+        #     By.XPATH, f'//button[contains(text(), "All")]')
         button.click()
         time.sleep(1)
         button = self.driver.find_element(
@@ -65,13 +67,13 @@ class QuillbotScraper:
         self.driver.quit()
 
 
-def get_data():
-    with open('results.json', 'r') as file:
+def get_data(path='model_outputs/2/gemma.json'):
+    with open(path, 'r') as file:
         return json.load(file)
 
 
-def dump_data(data):
-    with open('results.json', 'w') as file:
+def dump_data(data, path='model_outputs/2/gemma.json'):
+    with open(path, 'w') as file:
         json.dump(data, file, indent=4)
 
 
@@ -79,22 +81,27 @@ def anything_to_process(data: dict, language: str) -> bool:
     return any("quillbot_errors" not in d for d in data[language])
 
 
-def process_language(data: dict, language: str, save_interval: int):
+def process_language(data: dict, language: str, save_interval: int, path: str):
     quillbot_scraper = QuillbotScraper(lang=language)
     count, to_processed = 0, sum([1 for d in data[language] if "quillbot_errors" not in d])
 
     for d in data[language]:
         if "quillbot_errors" not in d:
-            d["quillbot_errors"] = quillbot_scraper.get_error_count(d["content"])
+            content = d["content"]
+            content = content.replace('😊', "")
+            content = content.replace('👍', "")
+            content = content.rstrip()
+            d["quillbot_errors"] = quillbot_scraper.get_error_count(content)
             count += 1
             if count % save_interval == 0:
                 print(f"Processed {count}/{to_processed} entries for {language}, dumping results.")
-                dump_data(data)
-    dump_data(data)
+                dump_data(data, path)
+    dump_data(data, path)
 
 
 def get_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
+    parser.add_argument("--file", type=str, default="results.json")
     parser.add_argument("--lang", type=str, nargs="*")
     parser.add_argument("--save-interval", type=int, default=1)
     return parser.parse_args()
@@ -102,14 +109,14 @@ def get_args() -> argparse.Namespace:
 
 def main() -> None:
     args = get_args()
-    data = get_data()
+    data = get_data(args.file)
     for lang in args.lang:
         if lang not in data:
             print(f"Selected language {lang} not found in data!")
         else:
             while anything_to_process(data, lang):
                 try:
-                    process_language(data, lang, args.save_interval)
+                    process_language(data, lang, args.save_interval, args.file)
                 except Exception as e:
                     print(f"Error processing language {lang}: {e}")
                     continue
