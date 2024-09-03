@@ -88,6 +88,7 @@ def process_language(data: dict, language: str, save_interval: int, path: str):
     for d in data[language]:
         if "quillbot_errors" not in d:
             content = d["content"]
+            content = content[1:-1] if content.startswith('"') and content.endswith('"') else content
             content = content.replace('😊', "")
             content = content.replace('👍', "")
             content = content.rstrip()
