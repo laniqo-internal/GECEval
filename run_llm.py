@@ -30,12 +30,21 @@ PROMPTS_SET = [
 ]
 
 MODELS = {
-    "karen_strict": "FPHam/Karen_TheEditor_V2_CREATIVE_Mistral_7B",
-    "mistral": "mistralai/Mistral-7B-Instruct-v0.3",
-    "llama31": "meta-llama/Meta-Llama-3.1-8B-Instruct",
-    "openchat36": "openchat/openchat-3.6-8b-20240522",
-    "tower7B": "Unbabel/TowerInstruct-7B-v0.2",
+    "aya": "CohereForAI/aya-23-8B",
+    "bloom": "bigscience/bloom-7b1",
     "gemma2B": "google/gemma-2-2b-it",
+    "gemma9B": "google/gemma-2-9b-it",
+    "karen-creative": "FPHam/Karen_TheEditor_V2_CREATIVE_Mistral_7B",
+    "karen-strict": "FPHam/Karen_TheEditor_V2_STRICT_Mistral_7B",
+    "llama31": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "mistral": "mistralai/Mistral-7B-Instruct-v0.3",
+    "openchat": "openchat/openchat-3.5-0106",
+    "phi": "microsoft/Phi-3-mini-4k-instruct",
+    "qwen": "Qwen/Qwen2-7B-Instruct",
+    "smol": "HuggingFaceTB/SmolLM-1.7B-Instruct",
+    "tower7B": "Unbabel/TowerInstruct-7B-v0.2",
+    "xglm": "facebook/xglm-7.5B",
+    "yi": "01-ai/Yi-1.5-9B-Chat",
 }
 
 
