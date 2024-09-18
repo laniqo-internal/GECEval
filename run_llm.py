@@ -179,7 +179,7 @@ def main() -> None:
         models=models_to_process,
         device=args.device,
         iterations=args.iterations,
-        prompts=args.prompts or range(len(PROMPTS_SET))
+        prompts=args.prompt or range(len(PROMPTS_SET))
     )
 
 
