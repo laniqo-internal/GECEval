@@ -5,6 +5,7 @@ import time
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
+ENGLISH_PROMPT = "Edit the following text for spelling and grammar mistakes, make minimal changes, and return only the corrected text. If the text is already correct, return it without any explanations:"
 PROMPTS_SET = [
     {
         "en": "Edit the following text for spelling and grammar mistakes:",
@@ -26,6 +27,13 @@ PROMPTS_SET = [
         "it": "Modifica il testo seguente per errori di ortografia e grammatica, apporta modifiche minime e restituisci solo il testo corretto. Se il testo è già corretto, restituiscilo senza spiegazioni:", # FIXED, bigger diff
         "sv": "Redigera följande text för stavnings- och grammatikfel, gör minimala ändringar och returnera endast den korrigerade texten. Om texten redan är korrekt, returnera den utan några förklaringar:", # FIXED , returnera
         "cs": "Upravte v následujícím textu pravopisné a gramatické chyby, proveďte minimální změny a vraťte pouze opravený text. Pokud je text již správný, vraťte jej bez vysvětlení:"
+    },
+    {
+        "en": ENGLISH_PROMPT,
+        "de": ENGLISH_PROMPT,
+        "it": ENGLISH_PROMPT,
+        "sv": ENGLISH_PROMPT,
+        "cs": ENGLISH_PROMPT
     }
 ]
 
@@ -101,8 +109,8 @@ def process_batch(prompt_idx, batch, language, model, tokenizer, device):
     return output
 
 
-def process_all_prompts(data, device, model, model_id, tokenizer, iteration):
-    for prompt_idx in range(len(PROMPTS_SET)):
+def process_all_prompts(data, device, model, model_id, tokenizer, iteration, prompts):
+    for prompt_idx in prompts:
         print("Processing prompt:", prompt_idx, flush=True)
 
         outputs = {}
@@ -130,7 +138,7 @@ def process_all_prompts(data, device, model, model_id, tokenizer, iteration):
             f.write(json.dumps(outputs, ensure_ascii=False, indent=4))
 
 
-def process_all_models(models, device, iterations):
+def process_all_models(models, device, iterations, prompts):
     with open('data_joined.json', 'r') as f:
         data = json.load(f)
     data = sort_data_lengths(data)
@@ -144,7 +152,7 @@ def process_all_models(models, device, iterations):
         print(f"Start processing model {model_id}: {name}", flush=True)
         for iteration in range(iterations):
             print(f"Iteration: {iteration + 1}/{iterations}", flush=True)
-            process_all_prompts(data, device, model, model_id, tokenizer, iteration)
+            process_all_prompts(data, device, model, model_id, tokenizer, iteration, prompts)
             print("-" * 50, flush=True)
         print(f"Done processing model {model_id}: {name}", flush=True)
         if device == "cuda":
@@ -157,6 +165,7 @@ def get_args() -> argparse.Namespace:
     parser.add_argument("--model", type=str, nargs="*")
     parser.add_argument("--device", type=str, default="cuda")
     parser.add_argument("--iterations", type=int, default=1)
+    parser.add_argument("--prompt", type=int, nargs='*')
     return parser.parse_args()
 
 
@@ -170,6 +179,7 @@ def main() -> None:
         models=models_to_process,
         device=args.device,
         iterations=args.iterations,
+        prompts=args.prompts or range(len(PROMPTS_SET))
     )
 
 
