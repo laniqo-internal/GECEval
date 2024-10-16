@@ -10,8 +10,8 @@ import numpy as np
 
 from geceval.modules.bertscore_module import BERTScoreModule
 from geceval.modules.bleurt_module import BleuRTModule
+from geceval.modules.gleu import GleuModule
 from geceval.modules.jaccard_distance import JaccardDistanceModule
-from geceval.modules.language_stability_module import LanguageStabilityModule
 from geceval.modules.language_switch_module import LanguageSwitchModule
 from geceval.modules.language_tool_module import LanguageToolModule
 from geceval.modules.levenshtein_module import LevenshteinModule
@@ -35,13 +35,13 @@ class GECModules(Enum):
     SPELLCHECKING = 2
     PUNCTUATION_SEEKER = 3
     BERTSCORE = 4
-    LANGUAGE_STABILITY = 5
-    LEVENSHTEIN = 6
-    JACCARD = 7
-    TOKEN_COUNT_DISTANCE = 8
-    LANGUAGE_SWITCH = 9
-    SENTENCE_BERT = 10
-    BLEURT = 11
+    LEVENSHTEIN = 5
+    JACCARD = 6
+    TOKEN_COUNT_DISTANCE = 7
+    LANGUAGE_SWITCH = 8
+    SENTENCE_BERT = 9
+    BLEURT = 10
+    GLEU = 11
 
 
 def log_screen_file(text):
@@ -54,17 +54,17 @@ class Evaluator:
         self.supported_languages = ["en", "cs", "sv", "de", "it"]
 
         used_modules = {
-            # GECModules.LANGUAGE_TOOL,
-            # GECModules.PUNCTUATION_SEEKER,
-            # GECModules.SPELLCHECKING,
-            # GECModules.LANGUAGE_STABILITY,
-            # GECModules.LANGUAGE_SWITCH,
-            # GECModules.LEVENSHTEIN,
-            # GECModules.TOKEN_COUNT_DISTANCE,
-            # GECModules.JACCARD,
-            # GECModules.BERTSCORE,
-            # GECModules.SENTENCE_BERT
-            GECModules.BLEURT
+            GECModules.LANGUAGE_TOOL,
+            GECModules.PUNCTUATION_SEEKER,
+            GECModules.SPELLCHECKING,
+            GECModules.LANGUAGE_SWITCH,
+            GECModules.LEVENSHTEIN,
+            GECModules.TOKEN_COUNT_DISTANCE,
+            GECModules.JACCARD,
+            GECModules.BERTSCORE,
+            GECModules.SENTENCE_BERT,
+            GECModules.BLEURT,
+            GECModules.GLEU
         }
 
         self.per_language_modules = {
@@ -92,7 +92,6 @@ class Evaluator:
             GECModules.SPELLCHECKING: SpellcheckerModule,
             GECModules.LANGUAGE_TOOL: LanguageToolModule,
             GECModules.PUNCTUATION_SEEKER: PunctuationSeekerModule,
-            GECModules.LANGUAGE_STABILITY: LanguageStabilityModule,
             GECModules.LANGUAGE_SWITCH: LanguageSwitchModule,
             GECModules.LEVENSHTEIN: LevenshteinModule,
             GECModules.TOKEN_COUNT_DISTANCE: TokenCountDistanceModule,
@@ -100,6 +99,7 @@ class Evaluator:
             GECModules.BERTSCORE: BERTScoreModule,
             GECModules.SENTENCE_BERT: SentenceBertModule,
             GECModules.BLEURT: BleuRTModule,
+            GECModules.GLEU: GleuModule
         }
 
         for language in self.supported_languages:
@@ -300,22 +300,40 @@ if __name__ == "__main__":
         help="JSON data.",
         default="./data/merged_multillm.json.xz",
     )
+
+    parser.add_argument(
+        "-m",
+        "--models",
+        help="Models to evaluate, comma-separated",
+        default="aya,bloom,gemma,gemma2B,karen,karencreative,llama31,mistral,openchat,phi,qwen,smol,tower7B1,yi,xglm"
+    )
+
+    parser.add_argument(
+        "-l",
+        "--languages",
+        help="Languages to evaluate, comma-separated",
+        default="en,de,it,sv"
+    )
+
+    parser.add_argument(
+        "-p",
+        "--prompt_ids",
+        help="Prompt ids to use, comma-separated",
+        default="2"
+    )
+
     args = parser.parse_args()
     experiment_path = args.experiment_output_path
+    model_names = args.models.split(",")
+    languages = args.languages.split(",")
+    prompt_ids = [int(p) for p in args.prompt_ids.split(",")]
 
     evaluator = Evaluator()
     evaluator.evaluate(
         experiment_path,
         use_comparative_metrics=True,
-        prompt_ids=[2],
-        # languages=["it"],
-        # model_names=[
-        #    "gemma2B",
-        #    "tower7B1",
-        #    "tower7B2",
-        #    "tower7B3",
-        #    "tower7B4",
-        #    "tower7B5",
-        # ],
+        prompt_ids=prompt_ids,
+        languages=languages,
+        model_names=model_names
     )
     evaluator.close()

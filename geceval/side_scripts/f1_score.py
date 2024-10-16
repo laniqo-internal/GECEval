@@ -4,6 +4,9 @@ import sys
 from dataclasses import dataclass
 from operator import itemgetter
 
+import numpy as np
+from nltk.tokenize import word_tokenize
+
 
 def load_data(data_path):
     data = {}
@@ -57,15 +60,29 @@ class Measure:
 models = set()
 prompts = set()
 
+total_lengths_tokens = []
 for language in data:  # language
+    if language == 'cs':
+        continue
     print(f"\nProcessing: {language}")
     results = []
-    for label in data[language]:  # filename
-        current = data[language][label]
-        is_correct = True if current["marked_correct"] == "correct" else False
-        before_correction = current["text"].strip().lower()
+    summary = {"TOTAL": 0, "CORRECT": 0}
+    lengths = []
+    lengths_tokens = []
 
-        for elem in current["corrections"]:
+    for label in data[language]:  # filename
+        summary["TOTAL"] += 1
+        current_el = data[language][label]
+        is_correct = True if current_el["marked_correct"] == "correct" else False
+        if is_correct:
+            summary["CORRECT"] += 1
+
+        before_correction = current_el["text"].strip().lower()
+        lengths.append(len(before_correction))
+        lengths_tokens.append(len(word_tokenize(before_correction)))
+        total_lengths_tokens.append(len(word_tokenize(before_correction)))
+
+        for elem in current_el["corrections"]:
             content = elem["content"].strip().lower()
             llm_corrected = True if before_correction != content else False
             results.append(
@@ -75,6 +92,10 @@ for language in data:  # language
             )
             models.add(elem["model_name"])
             prompts.add(elem["prompt_id"])
+
+    print(summary)
+    print(np.mean(lengths), np.std(lengths))
+    print(np.mean(lengths_tokens), np.std(lengths_tokens))
 
     per_prompt_scores = {id: Measure() for id in prompts}
     per_model_scores = {id: Measure() for id in models}
@@ -86,11 +107,9 @@ for language in data:  # language
         model_name = elem.model_name
 
         if elem.was_correct and not elem.corrected:
-            # było poprawne i model nie poprawił
             per_model_scores[model_name].tp += 1
             per_prompt_scores[prompt_id].tp += 1
         elif elem.was_correct and elem.corrected:
-            # było poprawne i omdel poprawił
             per_model_scores[model_name].fp += 1
             per_prompt_scores[prompt_id].fp += 1
         elif not elem.was_correct and not elem.corrected:
@@ -126,27 +145,4 @@ for language in data:  # language
             f"Prompt: {prompt},\t\tp: {per_prompt_scores[prompt].precision},\tr: {per_prompt_scores[prompt].recall},\tf1: {per_prompt_scores[prompt].f1}"
         )
 
-        # print(label, data[language][label].keys())
-        # print(data[language][label]['marked_correct'])
-        # print(data[language][label]['text'])
-        # print(data[language][label]['corrections'][5])
-        # prompt_id, content, model
-
-# assert len(data.keys()) == 1
-
-# language = list(data.keys())[0]
-
-# for elem in data[language]:
-#    if elem["marked_correct"] == 1:
-#        if elem["before_correction"] == elem["after__correction"]:
-#            tp += 1
-#        else:
-#            fn += 1
-#    elif elem["before_correction"] == elem["after__correction"]:
-#        fp += 1
-
-# precision = 1.0 * tp / (tp + fp)
-# recall = 1.0 * tp / (tp + fn)
-# f1 = 2.0 * precision * recall / (precision + recall)
-
-# print(f"Precision:\t{precision}\nRecall:\t{recall}\nF1:\t{f1}")
+print(np.mean(total_lengths_tokens), np.std(total_lengths_tokens))
