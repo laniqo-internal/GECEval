@@ -5,7 +5,7 @@ fasttext==0.9.3
 huggingface-hub==0.23.4
 python-Levenshtein==0.25.1
 bert-score==0.3.13
-nltk==3.8.1
+nltk==3.9
 evaluate==0.4.1
 sentence-transformers==3.0.1
 git+https://github.com/google-research/bleurt.git
